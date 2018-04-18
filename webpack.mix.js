@@ -1,9 +1,10 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 // LARAVEL-MIX DOES NOT HAVE CLEAN UP API, THIS IS A PLUGIN FOR WEB-PACK TO CLEAN UP ANY PREVIOUS COMPILED FILES
 // THIS PLUGIN IS INTEGRATED INTO LARAVEL-MIX WITH webpackConfig() API WHICH ADDS CUSTOM WEBPACK CONFIGURATION
 // https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
-let CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin    = require('clean-webpack-plugin');
+const FlowWebpackPlugin     = require('flow-webpack-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -20,7 +21,8 @@ mix
 // CLEAN UP PROCEDURE
     .webpackConfig({
         plugins: [
-            new CleanWebpackPlugin(['public/js', 'public/css'])
+            new CleanWebpackPlugin(['public/js', 'public/css']),
+            new FlowWebpackPlugin()
         ]
     })
     // JS COMPILATION
