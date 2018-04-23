@@ -1,7 +1,8 @@
 [ignore]
-.*/node_modules/.*
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/vendor/.*
 [include]
-
+<PROJECT_ROOT>/resources/.*
 [libs]
 
 [lints]

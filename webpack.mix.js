@@ -22,7 +22,9 @@ mix
     .webpackConfig({
         plugins: [
             new CleanWebpackPlugin(['public/js', 'public/css']),
-            new FlowWebpackPlugin()
+            new FlowWebpackPlugin({
+                failOnError: true,
+            })
         ]
     })
     // JS COMPILATION

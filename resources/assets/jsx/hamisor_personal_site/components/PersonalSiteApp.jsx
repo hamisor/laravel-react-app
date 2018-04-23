@@ -1,3 +1,6 @@
+// @flow
+
+// $FlowFixMe: Suppress React dependency warming
 class PersonalSiteApp extends React.Component
 {
 	constructor()
@@ -20,4 +23,3 @@ class PersonalSiteApp extends React.Component
 }
 
 export default PersonalSiteApp
-
