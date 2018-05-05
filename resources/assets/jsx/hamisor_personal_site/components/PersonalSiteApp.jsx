@@ -1,7 +1,12 @@
 // @flow
+import * as React from 'react';
 
-// $FlowFixMe: Suppress React dependency warming
-class PersonalSiteApp extends React.Component
+type Props = {
+    foo: number,
+    bar?: string,
+};
+
+class PersonalSiteApp extends React.Component<Props>
 {
 	constructor()
 	{
@@ -16,6 +21,7 @@ class PersonalSiteApp extends React.Component
                 </div>
                 <div className="content">
                     This is content
+                    <span></span>
                 </div>
             </div>
         );
