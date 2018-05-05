@@ -1,3 +1,4 @@
+import ReactDOM 			from 'react-dom';
 import { BrowserRouter }	from 'react-router-dom';
 // TOP LEVEL COMPONENTS
 import PersonalSiteApp 		from './hamisor_personal_site/components/PersonalSiteApp';
