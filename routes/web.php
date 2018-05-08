@@ -11,7 +11,7 @@
 |
 */
 
-// Todo: Change regex to only match all app's available routes
+// TODO: Change regex to only match all app's available routes
 Route::any('{all}', function () {
     return view('personalSiteApp');
 })->where(['all' => '.*']);

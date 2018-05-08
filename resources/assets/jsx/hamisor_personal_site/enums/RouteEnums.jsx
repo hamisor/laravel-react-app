@@ -1,0 +1,8 @@
+export default
+{
+	HOME:		'HOME',
+	ABOUT_ME:	'ABOUT_ME',
+	BLOG:		'BLOG',
+	PROJECTS:	'PROJECTS',
+	CONTACT_ME:	'CONTACT_ME'
+}
