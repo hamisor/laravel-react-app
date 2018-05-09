@@ -21,18 +21,18 @@ class MenuStore extends Store
         switch (action)
         {
             case MenuEnums.MAIN_MENU_ON:
-                this.__setMainMenuVisibility(true);
+                this._setMainMenuVisibility(true);
                 this.__emitChange();
                 break;
             case MenuEnums.MAIN_MENU_OFF:
-                this.__setMainMenuVisibility(false);
+                this._setMainMenuVisibility(false);
                 this.__emitChange();
                 break;
             default:
                 break;
         }
     }
-    __setMainMenuVisibility(isVisible)
+    _setMainMenuVisibility(isVisible)
     {
         this.isMainMenuVisible = isVisible;
     }

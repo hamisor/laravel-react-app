@@ -2,14 +2,14 @@ import HamisorSiteAppDispatcher from '../HamisorSiteAppDispatcher';
 import { Store }                from 'flux/utils';
 import Utilities				from '../../common/Utilities';
 import MenuEnums				from '../enums/MenuEnums';
-import AdminRouteMap			from '../maps/RouteMap';
+import RouteMap			        from '../maps/RouteMap';
 
 class MenuOptionStore extends Store
 {
 	constructor()
 	{
 		super(HamisorSiteAppDispatcher);
-		this.urlPathToMenuOptionMap 	= Utilities.flipOneToOneObj(AdminRouteMap);
+		this.urlPathToMenuOptionMap 	= Utilities.flipOneToOneObj(RouteMap);
 		this.currentMenuOption			= null;
 	}
 	// Public
@@ -27,7 +27,7 @@ class MenuOptionStore extends Store
         {
             case MenuEnums.NEW_SELECTION:
                 this.__setCurrentMenuOption(data);
-                this.emitChange();
+                this.__emitChange();
                 break;
             default:
                 break;
