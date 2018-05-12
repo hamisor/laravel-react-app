@@ -1,12 +1,26 @@
 // Hamisor site variables
-@import 'variables/hamisorSiteColorUsageName';
-@import 'variables/hamisorSiteFontSize';
+@import "variables/hamisorSiteColorUsageName";
+@import "variables/hamisorSiteFontSize";
+// Hamisor site mixins
+@import "mixins/mixins";
 
 // Hamisor site styles
 #reactApp
 {
   #appContainer
   {
-    @import 'components/burgerMenu';
+    height: 100vh;
+    @import "components/burgerMenu";
+    #pageContainer
+    {
+      // VARIABLES
+      $pageContainerHeight: 100%;
+      $headerMenuHeight:    80px;
+
+      height: $pageContainerHeight;
+      overflow: hidden;
+      @import "components/headerMenu";
+      @import "components/content";
+    }
   }
 }

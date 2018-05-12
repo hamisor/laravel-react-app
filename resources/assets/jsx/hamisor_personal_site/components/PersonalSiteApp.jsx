@@ -12,7 +12,7 @@ class PersonalSiteApp extends React.Component
 		return (
             <div id="appContainer">
                 <BurgerMenu/>
-                <div id="page-wrap">
+                <div id="pageContainer">
                     <HeaderMenu/>
                     <Content/>
                 </div>

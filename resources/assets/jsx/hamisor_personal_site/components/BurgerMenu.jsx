@@ -24,10 +24,10 @@ class BurgerMenu extends React.Component
     {
         return(
             <div className="d-block d-sm-none">
-                <Menu pageWrapId={ "page-wrap" }
-                             outerContainerId="appContainer"
-                             isOpen={this.state.isMenuOpen}
-                             onStateChange={this._onMenuButtonClick}>
+                <Menu pageWrapId={ "pageContainer" }
+                      outerContainerId="appContainer"
+                      isOpen={this.state.isMenuOpen}
+                      onStateChange={this._onMenuButtonClick}>
                    <MenuList onNavigationItemClick={this._onNavigationItemClick} currentMenuOption={this.state.currentMenuOption}/>
                 </Menu>
             </div>

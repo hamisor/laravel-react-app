@@ -39,10 +39,10 @@ class MenuList extends React.Component
     }
 }
 
-MenuList.PropTypes =
+MenuList.propTypes =
 {
     onNavigationItemClick:  PropTypes.func.isRequired,
-    currentMenuOption:      PropTypes.string.isRequired
+    currentMenuOption:      PropTypes.string
 };
 
 export default MenuList

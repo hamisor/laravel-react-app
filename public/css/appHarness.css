@@ -10389,6 +10389,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer {
+  height: 100vh;
   /* Styling of overlay */
   /* Position and sizing of burger button */
 }
@@ -10457,11 +10458,25 @@ a.text-dark:focus {
   width: 20px;
   height: 20px;
   left: 40px;
-  top: 15px;
+  top: 32px;
 }
 
 #reactApp #appContainer .bm-burger-button .bm-burger-bars {
   background: black;
   height: 15% !important;
+}
+
+#reactApp #appContainer #pageContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+#reactApp #appContainer #pageContainer .navbar {
+  height: 80px;
+}
+
+#reactApp #appContainer #pageContainer .content {
+  height: calc(100% - 80px);
+  overflow: scroll;
 }
 

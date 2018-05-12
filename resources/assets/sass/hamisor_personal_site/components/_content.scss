@@ -1,0 +1,5 @@
+.content
+{
+  @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
+  overflow: scroll;
+}

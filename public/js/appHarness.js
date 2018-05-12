@@ -16215,9 +16215,9 @@ var MenuList = function (_React$Component) {
     return MenuList;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-MenuList.PropTypes = {
+MenuList.propTypes = {
     onNavigationItemClick: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.func.isRequired,
-    currentMenuOption: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired
+    currentMenuOption: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (MenuList);
@@ -38843,7 +38843,7 @@ var PersonalSiteApp = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__BurgerMenu__["a" /* default */], null),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
-                    { id: 'page-wrap' },
+                    { id: 'pageContainer' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__HeaderMenu__["a" /* default */], null),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Content__["a" /* default */], null)
                 )
@@ -60886,7 +60886,7 @@ var BurgerMenu = function (_React$Component) {
                 { className: 'd-block d-sm-none' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_react_burger_menu__["push"],
-                    { pageWrapId: "page-wrap",
+                    { pageWrapId: "pageContainer",
                         outerContainerId: 'appContainer',
                         isOpen: this.state.isMenuOpen,
                         onStateChange: this._onMenuButtonClick },
@@ -72061,7 +72061,7 @@ var Content = function (_React$Component) {
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
-                { className: 'container-fluid' },
+                { className: 'content container-fluid' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'h3',
                     null,
