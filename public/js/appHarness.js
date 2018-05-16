@@ -71977,8 +71977,8 @@ var HeaderMenu = function (_React$Component) {
                 'nav',
                 { className: 'navbar navbar-expand-sm stick-top navbar-light bg-light' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'a',
-                    { className: 'navbar-brand d-none d-sm-block', href: '#' },
+                    'span',
+                    { className: 'navbar-brand d-none d-sm-block' },
                     'Hamisor'
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
