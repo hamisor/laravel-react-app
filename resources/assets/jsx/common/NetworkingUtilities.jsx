@@ -1,16 +1,13 @@
-require('whatwg-fetch');
-import Utilities 							from './Utilities';
-import HttpVerbsEnums 						from './enums/HttpVerbsEnums';
-import NetworkingFailedRequestReasonEnums	from './enums/NetworkingFailedRequestReasonEnums';
-
-const HTTP_STATUS_OK		= 200;
-// TODO: check this regex to check for "application/json" text occurrence
-const REGEX_APPLICATION_JSON= /application\/json/g;
+import Qs 										from 'qs';
+import Utilities 								from './Utilities';
+import HttpVerbsEnums 							from './enums/HttpVerbsEnums';
+import NetworkingFailedRequestCodeEnums			from './enums/NetworkingFailedRequestCodeEnums';
+import NetworkingFailedRequestCodeToReasonMap	from './maps/NetworkingFailedRequestCodeToReasonMap';
 
 class NetworkingUtilities
 {
 	/**
-	 * ASYNCHRONOUS NETWORK CALL FUNCTION
+	 * Asynchronous network call function
 	 *
 	 * @param url
 	 * @param routineName
@@ -21,122 +18,89 @@ class NetworkingUtilities
 	 */
 	static networkRequest(url, routineName, method, payload, callback)
 	{
-		// VALIDATIONS
+		// Validations
 		if(typeof(callback) !== "function")
 		{
-			console.error(`NETWORK REQUEST FAILED, REASON [ ${NetworkingFailedRequestReasonEnums.INVALID_CALLBACK_TYPE} ]`);
+			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.INVALID_CALLBACK_TYPE]} ]`);
 			return;
 		}
 		if(Utilities.isEmpty(url))
 		{
-			callback(NetworkingFailedRequestReasonEnums.EMPTY_URL,null);
+			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_URL]} ]`);
+			callback(NetworkingFailedRequestCodeEnums.EMPTY_URL, null);
 			return;
 		}
 		if(Utilities.isEmpty(routineName))
 		{
-			callback(NetworkingFailedRequestReasonEnums.EMPTY_ROUTINE_NAME,null);
+			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_ROUTINE_NAME]} ]`);
+			callback(NetworkingFailedRequestCodeEnums.EMPTY_ROUTINE_NAME, null);
 			return;
 		}
 		if(Utilities.isEmpty(method))
 		{
-			callback(NetworkingFailedRequestReasonEnums.EMPTY_REQUEST_METHOD,null);
+			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_REQUEST_METHOD]} ]`);
+			callback(NetworkingFailedRequestCodeEnums.EMPTY_REQUEST_METHOD, null);
 			return;
 		}
 
-		// STEP 1) BUILD FETCH REQUEST BODY
-		let requestBody	= null;
-		let endpoint	= url;
-		if(! Utilities.isEmpty(payload))
+		// Default axios request config
+		let requestConfig = {
+			url:		url,
+			method:		method,
+			headers:	{
+				'Content-Type': 'application/json'
+			}
+		};
+		if(!Utilities.isEmpty(payload))
 		{
 			switch (method)
 			{
-				// FOR THE FOLLOWING REQUEST METHODS, PAYLOAD ARE KEPT IN THE REQUEST BODY
+				// For the following request methods, payload are kept in the request body
 				case HttpVerbsEnums.DELETE:
 				case HttpVerbsEnums.PUT:
 				case HttpVerbsEnums.POST:
-				{
-					// REST API TAKE JSON
-					requestBody = JSON.stringify( payload );
-				}
+					requestConfig['data'] = payload;
 					break;
-				// FOR "GET" REQUEST, A URL WITH REQUEST PARAMS NEEDS TO BE GENERATED
+				// For any "get" request, a url with request params needs to be generated
 				case HttpVerbsEnums.GET:
-					endpoint = `${url}?${
-						// SERIALIZE PAYLOAD OBJECT TO URL PARAMS STRING (ES6 VERSION)
-						Object.keys(payload).map(item_payLoadKey => {
-
-							let payloadValue = payload[item_payLoadKey];
-							
-							// SERIALIZE ARRAY
-							if(payloadValue.constructor === Array)
-								return payloadValue.map(item_payloadValue => `${item_payLoadKey}[]=${item_payloadValue}`).join('&');
-							else
-								return `${item_payLoadKey}=${encodeURIComponent(payload[item_payLoadKey])}`;
-
-						}).join('&')}`;
+					requestConfig['params'] 			= payload;
+					requestConfig['paramsSerializer'] 	= params => Qs.stringify(params, {arrayFormat: 'brackets'});
 					break;
 				default:
-				{
-					callback(NetworkingFailedRequestReasonEnums.UNKNOWN_REQUEST_METHOD,null);
+					console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD]} ]`);
+					callback(NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD, null);
 					return;
-				}
 			}
 		}
 
-		// STEP 2) PREP FETCH DATA OBJECT
-		let fetchData = {
-			credentials:	'same-origin',
-			headers:		{
-				'Content-Type': 'application/json'
-			},
-			method:			method
-		};
-		// APPEND BODY FIELD IF IT'S NOT EMPTY
-		if(requestBody)
-			fetchData['body'] = requestBody;
+		// Uncomment this line for debugging
+		// console.info("Before making a network request, api endpoint is [%s], axios request config is [%o]", url, requestConfig);
 
-		console.info("BEFORE MAKING A NETWORK REQUEST, FETCH ENDPOINT IS [%s], FETCH DATA OBJECT IS [%o]", endpoint, fetchData);
- 
-		// STEP 3) RESOLVE FETCH PROMISE
-		fetch(endpoint, fetchData)
-			.then(function(response)
+		axios(requestConfig)
+		.then(response => { callback(null, {data: response.data});})
+		.catch(error =>
+		{
+			if (error.response)
 			{
-				console.info("FULL RESPONSE OBJECT IS [%o]", response);
-
-				let contentType = response.headers.get("content-type");
-				console.info(contentType);
-				// TODO: REGEX [ /application\/json/g ] CHECKING FOR 'application/json' OCCURRENCE SEEMS TO FAIL
-				// TODO: REWRITE THIS REGEX
-				// CHECK IF THE RESPONSE IS A VALID JSON BASED ON THE META DATA FROM THE RESPONSE HEADER
-				if(contentType.indexOf("application/json") !== -1)
-				{
-					// FOR ANY 200 JSON TYPE RESPONSES WHICH ONLY CONTAIN A data FIELD
-					if(response.status === HTTP_STATUS_OK)
-						return response.json()
-							.then(function (objResponse)
-							{
-								console.info(`SUCCESSFUL RESPONSE FROM SERVER ON ROUTINE [ ${routineName} ]`);
-								callback(null, objResponse);
-							});
-					// FOR ANY NON-200 JSON TYPE RESPONSES WHICH MAY CONTAIN ERROR INFO IN THE errors FIELD IN THE RESPONSE OBJECT
-					else
-						return response.json()
-							.then(function (objResponse)
-							{
-								console.error(`FAILED RESPONSE FROM SERVER ON ROUTINE [ ${routineName} ]`);
-								callback(NetworkingFailedRequestReasonEnums.FAILED_JSON_RESPONSE, objResponse);
-							});
-				}
-				else
-				{
-					console.error(`BROKEN JSON FROM SERVER ON ROUTINE [ ${routineName} ], BLAME URL [ ${url} ]`);
-					callback(NetworkingFailedRequestReasonEnums.BROKEN_JSON, null);
-				}
-			})
-			.catch(function(err) {
-				console.error(`FETCH ERRORS ON ROUTINE [ ${routineName} ], BLAME URL [ ${url} ], ERRORS [ ${err} ]`);
-				callback(NetworkingFailedRequestReasonEnums.FETCH_ERRORS, null);
-			});
+				// The request was made and the server responded with a status code
+				// that falls out of the range of 2xx
+				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.FAILED_RESPONSE]}, Blame Url [ ${url} ]]`);
+				callback(NetworkingFailedRequestCodeEnums.FAILED_RESPONSE, null);
+			}
+			else if (error.request)
+			{
+				// The request was made but no response was received
+				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER]}, Blame Url [ ${url} ]]`);
+				console.error("Request is [ %o ]", error.request);
+				callback(NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER, null);
+			}
+			else
+			{
+				// Something happened in setting up the request that triggered an Error
+				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR]}, Error ${error.message} ]]`);
+				callback(NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR, null);
+			}
+		});
 	}
 }
 
