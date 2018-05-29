@@ -1,7 +1,7 @@
 export default
 {
-	EMPTY:		'EMPTY',
-	LOADING:	'LOADING',
-	SUCCESS:	'SUCCESS',
-	FAIL:		'FAIL'
+	EMPTY:		"EMPTY",
+	LOADING:	"LOADING",
+	SUCCESS:	"SUCCESS",
+	FAIL:		"FAIL"
 }

@@ -1,6 +1,6 @@
-import HamisorSiteAppDispatcher from '../HamisorSiteAppDispatcher';
-import { Store }                from 'flux/utils';
-import MenuEnums                from '../enums/MenuEnums';
+import HamisorSiteAppDispatcher from "../HamisorSiteAppDispatcher";
+import { Store }                from "flux/utils";
+import MenuEnums                from "../enums/MenuEnums";
 
 class MenuStore extends Store
 {

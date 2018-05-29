@@ -1,12 +1,12 @@
-import React                from 'react';
-import { Switch, Route } 	from 'react-router-dom';
-import Home			        from './contents/Home';
-import About                from './contents/About';
-import Blog                 from './contents/Blog';
-import Projects             from './contents/Projects';
-import Contact              from './contents/Contact';
-import RouteEnums		    from '../enums/RouteEnums';
-import RouteMap		        from '../maps/RouteMap';
+import React                from "react";
+import { Switch, Route } 	from "react-router-dom";
+import Home			        from "./contents/Home";
+import About                from "./contents/About";
+import Blog                 from "./contents/Blog";
+import Projects             from "./contents/Projects";
+import Contact              from "./contents/Contact";
+import RouteEnums		    from "../enums/RouteEnums";
+import RouteMap		        from "../maps/RouteMap";
 
 class Content extends React.Component
 {

@@ -1,8 +1,8 @@
-import HamisorSiteAppDispatcher from '../HamisorSiteAppDispatcher';
-import { Store }                from 'flux/utils';
-import Utilities				from '../../common/Utilities';
-import MenuEnums				from '../enums/MenuEnums';
-import RouteMap			        from '../maps/RouteMap';
+import HamisorSiteAppDispatcher from "../HamisorSiteAppDispatcher";
+import { Store }                from "flux/utils";
+import Utilities				from "../../common/Utilities";
+import MenuEnums				from "../enums/MenuEnums";
+import RouteMap			        from "../maps/RouteMap";
 
 class MenuOptionStore extends Store
 {

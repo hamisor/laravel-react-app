@@ -1,8 +1,8 @@
-import Qs 										from 'qs';
-import Utilities 								from './Utilities';
-import HttpVerbsEnums 							from './enums/HttpVerbsEnums';
-import NetworkingFailedRequestCodeEnums			from './enums/NetworkingFailedRequestCodeEnums';
-import NetworkingFailedRequestCodeToReasonMap	from './maps/NetworkingFailedRequestCodeToReasonMap';
+import Qs 										from "qs";
+import Utilities 								from "./Utilities";
+import HttpVerbsEnums 							from "./enums/HttpVerbsEnums";
+import NetworkingFailedRequestCodeEnums			from "./enums/NetworkingFailedRequestCodeEnums";
+import NetworkingFailedRequestCodeToReasonMap	from "./maps/NetworkingFailedRequestCodeToReasonMap";
 
 class NetworkingUtilities
 {
@@ -48,7 +48,7 @@ class NetworkingUtilities
 			url:		url,
 			method:		method,
 			headers:	{
-				'Content-Type': 'application/json'
+				"Content-Type": "application/json"
 			}
 		};
 		if(!Utilities.isEmpty(payload))
@@ -59,12 +59,12 @@ class NetworkingUtilities
 				case HttpVerbsEnums.DELETE:
 				case HttpVerbsEnums.PUT:
 				case HttpVerbsEnums.POST:
-					requestConfig['data'] = payload;
+					requestConfig["data"] = payload;
 					break;
 				// For any "get" request, a url with request params needs to be generated
 				case HttpVerbsEnums.GET:
-					requestConfig['params'] 			= payload;
-					requestConfig['paramsSerializer'] 	= params => Qs.stringify(params, {arrayFormat: 'brackets'});
+					requestConfig["params"] 			= payload;
+					requestConfig["paramsSerializer"] 	= params => Qs.stringify(params, {arrayFormat: "brackets"});
 					break;
 				default:
 					console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD]} ]`);

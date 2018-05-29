@@ -1,4 +1,4 @@
-import React 				from 'react';
+import React 				from "react";
 import MenuActionCreator 	from "../../actions/MenuActionCreator";
 
 class Projects extends React.Component

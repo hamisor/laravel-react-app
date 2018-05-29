@@ -1,4 +1,4 @@
-import ApiRoutineEnums from '../enums/ApiRoutineEnums';
+import ApiRoutineEnums from "../enums/ApiRoutineEnums";
 
 // API base
 const API_BASE_URL	= "/api/v1";

@@ -1,5 +1,5 @@
-import HamisorSiteAppDispatcher	from '../HamisorSiteAppDispatcher';
-import HamisorSiteMenuEnums		from '../enums/MenuEnums';
+import HamisorSiteAppDispatcher	from "../HamisorSiteAppDispatcher";
+import HamisorSiteMenuEnums		from "../enums/MenuEnums";
 
 class MenuActionCreator
 {

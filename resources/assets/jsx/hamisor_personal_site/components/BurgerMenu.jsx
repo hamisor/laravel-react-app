@@ -1,9 +1,9 @@
-import React                from 'react';
-import { push as Menu }     from 'react-burger-menu';
-import MenuList             from './MenuList';
-import MenuActionCreator    from '../actions/MenuActionCreator';
-import MenuStore            from '../stores/MenuStore';
-import MenuOptionStore      from '../stores/MenuOptionStore';
+import React                from "react";
+import { push as Menu }     from "react-burger-menu";
+import MenuList             from "./MenuList";
+import MenuActionCreator    from "../actions/MenuActionCreator";
+import MenuStore            from "../stores/MenuStore";
+import MenuOptionStore      from "../stores/MenuOptionStore";
 
 class BurgerMenu extends React.Component
 {

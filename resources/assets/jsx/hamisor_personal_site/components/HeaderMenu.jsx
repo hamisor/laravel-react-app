@@ -1,7 +1,7 @@
-import React                from 'react';
-import MenuList             from './MenuList';
-import MenuActionCreator    from '../actions/MenuActionCreator';
-import MenuOptionStore      from '../stores/MenuOptionStore';
+import React                from "react";
+import MenuList             from "./MenuList";
+import MenuActionCreator    from "../actions/MenuActionCreator";
+import MenuOptionStore      from "../stores/MenuOptionStore";
 
 class HeaderMenu extends React.Component
 {

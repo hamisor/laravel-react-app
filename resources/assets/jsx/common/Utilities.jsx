@@ -19,13 +19,13 @@ class Utilities
 	{
 		switch (typeof obj)
 		{
-			case 'number':
+			case "number":
 				return (obj === 0);
-			case 'string':
+			case "string":
 				return (obj === "" || obj === "0");
-			case 'undefined':
+			case "undefined":
 				return true;
-			case 'object':
+			case "object":
 			{
 				for (let key in obj)
 					if (Object.prototype.hasOwnProperty.call(obj, key))
@@ -33,7 +33,7 @@ class Utilities
 
 				return true;
 			}
-			case 'function':
+			case "function":
 				return (obj === null || obj === undefined);
 			default:
 				return true;
