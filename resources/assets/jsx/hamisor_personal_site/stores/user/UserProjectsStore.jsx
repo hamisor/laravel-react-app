@@ -1,5 +1,6 @@
 import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
 import { Store }                from "flux/utils";
+import Utilities 				from "../../../common/Utilities";
 import ApiCallDataStatusEnums	from "../../../common/enums/ApiCallDataStatusEnums";
 import ApiRoutineEnums			from "../../enums/ApiRoutineEnums";
 import HamisorSiteApiHelper		from "../../HamisorSiteApiHelper";
@@ -28,7 +29,9 @@ class UserProjectsStore extends Store
 		switch (action)
 		{
 			case ApiRoutineEnums.GET_USER_PROJECTS:
-				this._getUserProjects();
+				if(Utilities.isEmpty(this.userProjects))
+					this._getUserProjects();
+				this.__emitChange();
 				break;
 			default:
 				break;
@@ -47,7 +50,6 @@ class UserProjectsStore extends Store
 	{
 		this._setLoadingStatus(ApiCallDataStatusEnums.LOADING);
 		HamisorSiteApiHelper.getUserProjects(null, this._onGetUserProjects);
-		this.__emitChange();
 	}
 	_onGetUserProjects(error, data)
 	{

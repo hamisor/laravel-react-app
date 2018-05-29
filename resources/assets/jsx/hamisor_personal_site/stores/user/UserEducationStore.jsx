@@ -1,5 +1,6 @@
 import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
 import { Store }                from "flux/utils";
+import Utilities 				from "../../../common/Utilities";
 import ApiCallDataStatusEnums	from "../../../common/enums/ApiCallDataStatusEnums";
 import ApiRoutineEnums			from "../../enums/ApiRoutineEnums";
 import HamisorSiteApiHelper		from "../../HamisorSiteApiHelper";
@@ -28,7 +29,9 @@ class UserEducationStore extends Store
 		switch (action)
 		{
 			case ApiRoutineEnums.GET_USER_EDUCATION:
-				this._getUserEducation();
+				if(Utilities.isEmpty(this.userEducation))
+					this._getUserEducation();
+				this.__emitChange();
 				break;
 			default:
 				break;
@@ -47,7 +50,6 @@ class UserEducationStore extends Store
 	{
 		this._setLoadingStatus(ApiCallDataStatusEnums.LOADING);
 		HamisorSiteApiHelper.getUserEducation(null, this._onGetUserEducation);
-		this.__emitChange();
 	}
 	_onGetUserEducation(error, data)
 	{

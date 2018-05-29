@@ -1,5 +1,6 @@
 import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
 import { Store }                from "flux/utils";
+import Utilities 				from "../../../common/Utilities";
 import ApiCallDataStatusEnums	from "../../../common/enums/ApiCallDataStatusEnums";
 import ApiRoutineEnums			from "../../enums/ApiRoutineEnums";
 import HamisorSiteApiHelper		from "../../HamisorSiteApiHelper";
@@ -28,7 +29,9 @@ class UserBioStore extends Store
 		switch (action)
 		{
 			case ApiRoutineEnums.GET_USER_BIO:
-				this._getUserBio();
+				if(Utilities.isEmpty(this.userBio))
+					this._getUserBio();
+				this.__emitChange();
 				break;
 			default:
 				break;
@@ -47,7 +50,6 @@ class UserBioStore extends Store
 	{
 		this._setLoadingStatus(ApiCallDataStatusEnums.LOADING);
 		HamisorSiteApiHelper.getUserBio(null, this._onGetUserBio);
-		this.__emitChange();
 	}
 	_onGetUserBio(error, data)
 	{
