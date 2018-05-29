@@ -6,7 +6,7 @@ class UserAttributes extends React.Component
 {
     render()
     {
-        return  <div className="userAttributes">
+        return  <div className="userAttributes col-sm-9">
                     <UserAttributesNav/>
                     <UserAttributesContent/>
                 </div>;
