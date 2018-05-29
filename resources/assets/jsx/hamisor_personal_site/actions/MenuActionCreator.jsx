@@ -20,7 +20,7 @@ class MenuActionCreator
 			    actionType: HamisorSiteMenuEnums.MAIN_MENU_OFF,
 		    });
     }
-	// This action is dispatch when a new content component is mounted
+	// This action is dispatched when a new content component has been mounted
 	static selectOption(data)
 	{
 		HamisorSiteAppDispatcher.dispatch({

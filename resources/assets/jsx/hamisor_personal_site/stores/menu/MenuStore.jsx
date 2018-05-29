@@ -1,6 +1,6 @@
-import HamisorSiteAppDispatcher from "../HamisorSiteAppDispatcher";
+import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
 import { Store }                from "flux/utils";
-import MenuEnums                from "../enums/MenuEnums";
+import MenuEnums                from "../../enums/MenuEnums";
 
 class MenuStore extends Store
 {
@@ -14,8 +14,8 @@ class MenuStore extends Store
     {
         return this.isMainMenuVisible;
     }
-    // Private
-    __onDispatch(payload)
+	// Protected
+	__onDispatch(payload)
     {
         let action	= payload.actionType;
         switch (action)
@@ -32,7 +32,8 @@ class MenuStore extends Store
                 break;
         }
     }
-    _setMainMenuVisibility(isVisible)
+	// Private
+	_setMainMenuVisibility(isVisible)
     {
         this.isMainMenuVisible = isVisible;
     }

@@ -1,7 +1,7 @@
 import React                from "react";
 import MenuList             from "./MenuList";
 import MenuActionCreator    from "../actions/MenuActionCreator";
-import MenuOptionStore      from "../stores/MenuOptionStore";
+import MenuOptionStore      from "../stores/menu/MenuOptionStore";
 
 class HeaderMenu extends React.Component
 {

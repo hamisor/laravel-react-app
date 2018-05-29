@@ -77,7 +77,7 @@ class NetworkingUtilities
 		// console.info("Before making a network request, api endpoint is [%s], axios request config is [%o]", url, requestConfig);
 
 		axios(requestConfig)
-		.then(response => { callback(null, {data: response.data});})
+		.then(response => { callback(null, response.data);})
 		.catch(error =>
 		{
 			if (error.response)

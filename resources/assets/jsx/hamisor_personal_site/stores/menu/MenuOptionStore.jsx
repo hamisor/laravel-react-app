@@ -1,8 +1,8 @@
-import HamisorSiteAppDispatcher from "../HamisorSiteAppDispatcher";
+import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
 import { Store }                from "flux/utils";
-import Utilities				from "../../common/Utilities";
-import MenuEnums				from "../enums/MenuEnums";
-import RouteMap			        from "../maps/RouteMap";
+import Utilities				from "../../../common/Utilities";
+import MenuEnums				from "../../enums/MenuEnums";
+import RouteMap			        from "../../maps/RouteMap";
 
 class MenuOptionStore extends Store
 {
@@ -17,7 +17,7 @@ class MenuOptionStore extends Store
 	{
 		return this.currentMenuOption;
 	}
-	// Private
+	// Protected
     __onDispatch(payload)
     {
         let action	= payload.actionType;
@@ -26,14 +26,15 @@ class MenuOptionStore extends Store
         switch (action)
         {
             case MenuEnums.NEW_SELECTION:
-                this.__setCurrentMenuOption(data);
+                this._setCurrentMenuOption(data);
                 this.__emitChange();
                 break;
             default:
                 break;
         }
     }
-	__setCurrentMenuOption(pathName)
+    // Private
+	_setCurrentMenuOption(pathName)
 	{
 		this.currentMenuOption = this.urlPathToMenuOptionMap[pathName];
 	}
