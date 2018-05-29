@@ -25,7 +25,7 @@ class MenuOptionStore extends Store
 
         switch (action)
         {
-            case MenuEnums.NEW_SELECTION:
+            case MenuEnums.NEW_MENU_SELECTION:
                 this._setCurrentMenuOption(data);
                 this.__emitChange();
                 break;

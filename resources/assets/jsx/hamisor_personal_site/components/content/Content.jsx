@@ -15,11 +15,11 @@ class Content extends React.Component
         return  <div className="content container-fluid">
                     <h3>This is content</h3>
                     <Switch>
-                        <Route exact path={RouteMap[RouteEnums.HOME]}   component={Home}/>
-                        <Route path={RouteMap[RouteEnums.ABOUT_ME]}     component={About}/>
-                        <Route path={RouteMap[RouteEnums.BLOG]}         component={Blog}/>
-                        <Route path={RouteMap[RouteEnums.PROJECTS]}     component={Projects}/>
-                        <Route path={RouteMap[RouteEnums.CONTACT_ME]}   component={Contact}/>
+                        <Route exact path={RouteMap[RouteEnums.HOME]}       component={Home}/>
+                        <Route path={RouteMap[RouteEnums.ABOUT_ME]}         component={About}/>
+                        <Route exact path={RouteMap[RouteEnums.BLOG]}       component={Blog}/>
+                        <Route exact path={RouteMap[RouteEnums.PROJECTS]}   component={Projects}/>
+                        <Route exact path={RouteMap[RouteEnums.CONTACT_ME]} component={Contact}/>
                     </Switch>
                 </div>;
     }

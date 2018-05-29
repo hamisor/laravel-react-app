@@ -1,5 +1,6 @@
 import React 				from "react";
 import MenuActionCreator 	from "../../../actions/MenuActionCreator";
+import UserAttributes		from "./about/UserAttributes";
 
 class About extends React.Component
 {
@@ -12,6 +13,7 @@ class About extends React.Component
 		return(
 			<div className="about">
 				This is About Me
+				<UserAttributes/>
 			</div>
 		);
 	}

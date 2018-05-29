@@ -17,7 +17,7 @@ class MenuList extends React.Component
                     </li>
                     <li className={`nav-item ${this.props.currentMenuOption === RouteEnums.ABOUT_ME ? "active": ""}`}>
                         <Link className="nav-link"
-                              to={RouteMap[RouteEnums.ABOUT_ME]}
+                              to={RouteMap[this.props.currentAttributeOption]}
                               onClick={this.props.onNavigationItemClick}>About Me</Link>
                     </li>
                     <li className={`nav-item ${this.props.currentMenuOption === RouteEnums.BLOG ? "active": ""}`}>
@@ -42,7 +42,8 @@ class MenuList extends React.Component
 MenuList.propTypes =
 {
     onNavigationItemClick:  PropTypes.func.isRequired,
-    currentMenuOption:      PropTypes.string
+    currentMenuOption:      PropTypes.string,
+    currentAttributeOption: PropTypes.string
 };
 
 export default MenuList

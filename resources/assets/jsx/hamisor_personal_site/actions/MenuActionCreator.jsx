@@ -24,7 +24,7 @@ class MenuActionCreator
 	static selectOption(data)
 	{
 		HamisorSiteAppDispatcher.dispatch({
-			actionType: HamisorSiteMenuEnums.NEW_SELECTION,
+			actionType: HamisorSiteMenuEnums.NEW_MENU_SELECTION,
 			data:		data
 		})
 	}

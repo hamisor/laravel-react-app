@@ -1,9 +1,10 @@
-import React                from "react";
-import { push as Menu }     from "react-burger-menu";
-import MenuList             from "./common/MenuList";
-import MenuActionCreator    from "../../actions/MenuActionCreator";
-import MenuStore            from "../../stores/menu/MenuStore";
-import MenuOptionStore      from "../../stores/menu/MenuOptionStore";
+import React                    from "react";
+import { push as Menu }         from "react-burger-menu";
+import MenuList                 from "./common/MenuList";
+import MenuActionCreator        from "../../actions/MenuActionCreator";
+import MenuStore                from "../../stores/menu/MenuStore";
+import MenuOptionStore          from "../../stores/menu/MenuOptionStore";
+import UserAttributeOptionStore from "../../stores/user/UserAttributeOptionStore";
 
 class BurgerMenu extends React.Component
 {
@@ -19,6 +20,7 @@ class BurgerMenu extends React.Component
     {
 		MenuStore.addListener(this._onStateChange);
 		MenuOptionStore.addListener(this._onStateChange);
+        UserAttributeOptionStore.addListener(this._onStateChange);
     }
 	render()
     {
@@ -28,7 +30,9 @@ class BurgerMenu extends React.Component
                       outerContainerId="appContainer"
                       isOpen={this.state.isMenuOpen}
                       onStateChange={this._onMenuButtonClick}>
-                   <MenuList onNavigationItemClick={this._onNavigationItemClick} currentMenuOption={this.state.currentMenuOption}/>
+                   <MenuList onNavigationItemClick={this._onNavigationItemClick}
+                             currentMenuOption={this.state.currentMenuOption}
+                             currentAttributeOption={this.state.currentAttributeOption}/>
                 </Menu>
             </div>
         );
@@ -41,8 +45,9 @@ class BurgerMenu extends React.Component
     _getStateFromStore()
     {
         return {
-            isMenuOpen: 		MenuStore.getMainMenuVisibility(),
-			currentMenuOption:	MenuOptionStore.getCurrentMenuOption()
+            isMenuOpen: 		    MenuStore.getMainMenuVisibility(),
+			currentMenuOption:	    MenuOptionStore.getCurrentMenuOption(),
+            currentAttributeOption: UserAttributeOptionStore.getCurrentAttributeOption()
         };
     }
     _onNavigationItemClick()

@@ -1,7 +1,8 @@
-import React                from "react";
-import MenuList             from "./common/MenuList";
-import MenuActionCreator    from "../../actions/MenuActionCreator";
-import MenuOptionStore      from "../../stores/menu/MenuOptionStore";
+import React                    from "react";
+import MenuList                 from "./common/MenuList";
+import MenuActionCreator        from "../../actions/MenuActionCreator";
+import MenuOptionStore          from "../../stores/menu/MenuOptionStore";
+import UserAttributeOptionStore from "../../stores/user/UserAttributeOptionStore";
 
 class HeaderMenu extends React.Component
 {
@@ -15,13 +16,16 @@ class HeaderMenu extends React.Component
     componentDidMount()
     {
         MenuOptionStore.addListener(this._onStateChange);
+        UserAttributeOptionStore.addListener(this._onStateChange);
     }
     render()
     {
         return  <nav className="navbar navbar-expand-sm stick-top navbar-light bg-light">
                     <span className="navbar-brand d-none d-sm-block">Hamisor</span>
                     <div className="collapse navbar-collapse">
-                        <MenuList onNavigationItemClick={this._onNavigationItemClick} currentMenuOption={this.state.currentMenuOption}/>
+                        <MenuList onNavigationItemClick={this._onNavigationItemClick}
+                                  currentMenuOption={this.state.currentMenuOption}
+                                  currentAttributeOption={this.state.currentAttributeOption}/>
                     </div>
                  </nav>
     }
@@ -33,7 +37,8 @@ class HeaderMenu extends React.Component
     _getStateFromStore()
     {
         return {
-            currentMenuOption:	MenuOptionStore.getCurrentMenuOption()
+            currentMenuOption:	    MenuOptionStore.getCurrentMenuOption(),
+            currentAttributeOption: UserAttributeOptionStore.getCurrentAttributeOption()
         };
     }
     _onNavigationItemClick()
