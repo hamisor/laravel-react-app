@@ -1,5 +1,5 @@
 import React 				from "react";
-import MenuActionCreator 	from "../../actions/MenuActionCreator";
+import MenuActionCreator 	from "../../../actions/MenuActionCreator";
 
 class Blog extends React.Component
 {

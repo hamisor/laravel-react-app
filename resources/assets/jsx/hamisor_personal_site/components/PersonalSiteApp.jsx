@@ -1,9 +1,9 @@
 import React				from "react";
 import ReactDOM 			from "react-dom";
 import { BrowserRouter }	from "react-router-dom";
-import BurgerMenu           from "./BurgerMenu";
-import HeaderMenu           from "./HeaderMenu";
-import Content              from "./Content";
+import BurgerMenu           from "./menu/BurgerMenu";
+import HeaderMenu           from "./menu/HeaderMenu";
+import Content              from "./content/Content";
 
 class PersonalSiteApp extends React.Component
 {

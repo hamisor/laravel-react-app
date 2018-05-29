@@ -1,8 +1,8 @@
 import React        from "react";
 import PropTypes    from "prop-types";
 import { Link }     from "react-router-dom";
-import RouteEnums   from "../enums/RouteEnums";
-import RouteMap     from "../maps/RouteMap";
+import RouteEnums   from "../../../enums/RouteEnums";
+import RouteMap     from "../../../maps/RouteMap";
 
 
 class MenuList extends React.Component

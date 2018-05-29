@@ -1,5 +1,5 @@
 import React 				from "react";
-import NetworkingUtilities 	from "../../../common/NetworkingUtilities";
+import NetworkingUtilities 	from "../../../../common/NetworkingUtilities";
 
 class TestApiComponent extends React.Component
 {
