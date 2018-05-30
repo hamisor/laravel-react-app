@@ -2951,7 +2951,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var LOADER_COLOUR = '#18FFFF';
+var LOADER_COLOUR = "#18FFFF";
 
 var HamisorSiteLoader = function (_React$Component) {
 	_inherits(HamisorSiteLoader, _React$Component);
@@ -2963,11 +2963,11 @@ var HamisorSiteLoader = function (_React$Component) {
 	}
 
 	_createClass(HamisorSiteLoader, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				'div',
-				{ className: 'hamisorSiteLoader' },
+				"div",
+				{ className: "hamisorSiteLoader" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_spinners__["RingLoader"], {
 					color: LOADER_COLOUR,
 					loading: this.props.isLoading
@@ -3015,12 +3015,12 @@ var HamisorSiteApiError = function (_React$Component) {
 	}
 
 	_createClass(HamisorSiteApiError, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				'div',
-				{ className: 'hamisorSiteApiError alert alert-danger' },
-				'Fail to ',
+				"div",
+				{ className: "hamisorSiteApiError alert alert-danger" },
+				"Fail to ",
 				this.props.routineName
 			);
 		}
@@ -18542,7 +18542,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(72);
-module.exports = __webpack_require__(219);
+module.exports = __webpack_require__(220);
 
 
 /***/ }),
@@ -73856,9 +73856,9 @@ var HeaderMenu = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contents_Home__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contents_About__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contents_Blog__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contents_Projects__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contents_Contact__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contents_Blog__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contents_Projects__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contents_Contact__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__enums_RouteEnums__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__maps_RouteMap__ = __webpack_require__(17);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -79854,6 +79854,7 @@ var UserWorkExperienceStore = function (_Store) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_user_UserBioStore__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__user_bio_UserBioDetail__ = __webpack_require__(216);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -79861,6 +79862,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -79902,11 +79904,13 @@ var UserBio = function (_React$Component) {
 					break;
 				case __WEBPACK_IMPORTED_MODULE_2__common_enums_ApiCallDataStatusEnums__["a" /* default */].SUCCESS:
 					isLoading = false;
-					info = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-						"span",
-						null,
-						JSON.stringify(this.state.userBio)
-					);
+					info = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__user_bio_UserBioDetail__["a" /* default */], { firstName: this.state.userBio.first_name,
+						lastName: this.state.userBio.last_name,
+						imgUrl: this.state.userBio.img,
+						gitHubUrl: this.state.userBio.github,
+						linkedinUrl: this.state.userBio.linkedin,
+						facebookUrl: this.state.userBio.facebook,
+						email: this.state.userBio.email });
 					break;
 				case __WEBPACK_IMPORTED_MODULE_2__common_enums_ApiCallDataStatusEnums__["a" /* default */].FAIL:
 					isLoading = false;
@@ -80065,6 +80069,114 @@ var UserBioStore = function (_Store) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var UserBioDetail = function (_React$Component) {
+	_inherits(UserBioDetail, _React$Component);
+
+	function UserBioDetail() {
+		_classCallCheck(this, UserBioDetail);
+
+		return _possibleConstructorReturn(this, (UserBioDetail.__proto__ || Object.getPrototypeOf(UserBioDetail)).apply(this, arguments));
+	}
+
+	_createClass(UserBioDetail, [{
+		key: "render",
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ className: "userBioDetail row" },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"div",
+					{ className: "userProfileImgCol col-3 col-md-12" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: this.props.imgUrl, style: { height: 60, width: 60 } })
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"div",
+					{ className: "userBioInfoCol col-9 col-md-12" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"h4",
+						null,
+						this.props.firstName + " " + this.props.firstName
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"ul",
+						{ className: "nav" },
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"li",
+							{ className: "nav-item" },
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"a",
+								{ className: "nav-link", href: this.props.email },
+								"Email"
+							)
+						),
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"li",
+							{ className: "nav-item" },
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"a",
+								{ className: "nav-link", href: this.props.gitHubUrl },
+								"Github"
+							)
+						),
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"li",
+							{ className: "nav-item" },
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"a",
+								{ className: "nav-link", href: this.props.facebookUrl },
+								"Facebook"
+							)
+						),
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"li",
+							{ className: "nav-item" },
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"a",
+								{ className: "nav-link", href: this.props.linkedinUrl },
+								"Linkedin"
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return UserBioDetail;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+UserBioDetail.propTypes = {
+	firstName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	lastName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	imgUrl: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	gitHubUrl: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	linkedinUrl: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	facebookUrl: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+	email: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (UserBioDetail);
+
+/***/ }),
+/* 217 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(13);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -80108,7 +80220,7 @@ var Blog = function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (Blog);
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80157,7 +80269,7 @@ var Projects = function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (Projects);
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80206,7 +80318,7 @@ var Contact = function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (Contact);
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

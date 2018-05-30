@@ -6,6 +6,7 @@ import ApiRoutineNameMap			from "../../../../maps/ApiRoutineNameMap";
 import UserBioStore					from "../../../../stores/user/UserBioStore";
 import HamisorSiteLoader			from "../../../../../common/components/HamisorSiteLoader";
 import HamisorSiteApiError			from "../../../../../common/components/HamisorSiteApiError";
+import UserBioDetail				from "./user_bio/UserBioDetail";
 
 class UserBio extends React.Component
 {
@@ -32,7 +33,13 @@ class UserBio extends React.Component
 				break;
 			case ApiCallDataStatusEnums.SUCCESS:
 				isLoading 	= false;
-				info		= <span>{JSON.stringify(this.state.userBio)}</span>;
+				info		= <UserBioDetail firstName={this.state.userBio.first_name}
+											 lastName={this.state.userBio.last_name}
+											 imgUrl={this.state.userBio.img}
+											 gitHubUrl={this.state.userBio.github}
+											 linkedinUrl={this.state.userBio.linkedin}
+											 facebookUrl={this.state.userBio.facebook}
+											 email={this.state.userBio.email}/>;
 				break;
 			case ApiCallDataStatusEnums.FAIL:
 				isLoading 	= false;
