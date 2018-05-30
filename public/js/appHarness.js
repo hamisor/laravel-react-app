@@ -97335,7 +97335,7 @@ var UserBioDetail = function (_React$Component) {
 							{ className: "nav-item" },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
-								{ className: "nav-link", href: this.props.email },
+								{ className: "nav-link", href: "mailto:" + this.props.email },
 								"Email"
 							)
 						),
@@ -97344,7 +97344,7 @@ var UserBioDetail = function (_React$Component) {
 							{ className: "nav-item" },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
-								{ className: "nav-link", href: this.props.gitHubUrl },
+								{ className: "nav-link", href: this.props.gitHubUrl, target: "_blank" },
 								"Github"
 							)
 						),
@@ -97353,7 +97353,7 @@ var UserBioDetail = function (_React$Component) {
 							{ className: "nav-item" },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
-								{ className: "nav-link", href: this.props.facebookUrl },
+								{ className: "nav-link", href: this.props.facebookUrl, target: "_blank" },
 								"Facebook"
 							)
 						),
@@ -97363,7 +97363,7 @@ var UserBioDetail = function (_React$Component) {
 							{ className: "nav-item" },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
-								{ className: "nav-link", href: this.props.linkedinUrl },
+								{ className: "nav-link", href: this.props.linkedinUrl, target: "_blank" },
 								"Linkedin"
 							)
 						)

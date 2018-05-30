@@ -13,16 +13,16 @@ class UserBioDetail extends React.Component
 						<h4>{`${this.props.firstName} ${this.props.lastName}`}</h4>
 						<ul className="nav">
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.email}>Email</a>
+								<a className="nav-link" href={`mailto:${this.props.email}`}>Email</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.gitHubUrl}>Github</a>
+								<a className="nav-link" href={this.props.gitHubUrl} target="_blank">Github</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.facebookUrl}>Facebook</a>
+								<a className="nav-link" href={this.props.facebookUrl} target="_blank">Facebook</a>
 							</li>h
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.linkedinUrl}>Linkedin</a>
+								<a className="nav-link" href={this.props.linkedinUrl} target="_blank">Linkedin</a>
 							</li>
 						</ul>
 					</div>
