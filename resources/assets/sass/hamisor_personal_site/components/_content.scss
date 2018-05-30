@@ -2,6 +2,7 @@
 {
   @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
   overflow: scroll;
+  padding-top: 30px;
 
   @import "content/contents/about";
 }

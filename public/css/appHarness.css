@@ -10476,7 +10476,6 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer {
   height: 100%;
-  padding-top: 30px;
   overflow: hidden;
 }
 
@@ -10487,6 +10486,7 @@ a.text-dark:focus {
 #reactApp #appContainer #pageContainer .content {
   height: calc(100% - 80px);
   overflow: scroll;
+  padding-top: 30px;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol {
@@ -10510,7 +10510,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail {
-  margin: 40px 0;
+  padding: 20px 0;
 }
 
 @media (min-width: 768px) {
