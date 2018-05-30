@@ -4660,7 +4660,7 @@ var caches = _createEmotion.caches;
 
 //# sourceMappingURL=index.es.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(24)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28)))
 
 /***/ }),
 /* 4 */
@@ -5810,6 +5810,26 @@ module.exports = warning;
 
 /***/ }),
 /* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+	GET_USER_BIO: "GET_USER_BIO",
+	GET_USER_EDUCATION: "GET_USER_EDUCATION",
+	GET_USER_SKILLS: "GET_USER_SKILLS",
+	GET_USER_WORK_EXPERIENCE: "GET_USER_WORK_EXPERIENCE",
+	GET_USER_PROJECTS: "GET_USER_PROJECTS",
+
+	// API callback actions
+	ON_GET_USER_BIO: "ON_GET_USER_BIO",
+	ON_GET_USER_EDUCATION: "ON_GET_USER_EDUCATION",
+	ON_GET_USER_SKILLS: "ON_GET_USER_SKILLS",
+	ON_GET_USER_WORK_EXPERIENCE: "ON_GET_USER_WORK_EXPERIENCE",
+	ON_GET_USER_PROJECTS: "ON_GET_USER_PROJECTS"
+});
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5868,7 +5888,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6178,26 +6198,6 @@ module.exports = {
 
 
 /***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-	GET_USER_BIO: "GET_USER_BIO",
-	GET_USER_EDUCATION: "GET_USER_EDUCATION",
-	GET_USER_SKILLS: "GET_USER_SKILLS",
-	GET_USER_WORK_EXPERIENCE: "GET_USER_WORK_EXPERIENCE",
-	GET_USER_PROJECTS: "GET_USER_PROJECTS",
-
-	// API callback actions
-	ON_GET_USER_BIO: "ON_GET_USER_BIO",
-	ON_GET_USER_EDUCATION: "ON_GET_USER_EDUCATION",
-	ON_GET_USER_SKILLS: "ON_GET_USER_SKILLS",
-	ON_GET_USER_WORK_EXPERIENCE: "ON_GET_USER_WORK_EXPERIENCE",
-	ON_GET_USER_PROJECTS: "ON_GET_USER_PROJECTS"
-});
-
-/***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6255,6 +6255,114 @@ module.exports = invariant;
 
 /***/ }),
 /* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_UserAttributeEnums__ = __webpack_require__(68);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+var UserAttributeActionCreator = function () {
+	function UserAttributeActionCreator() {
+		_classCallCheck(this, UserAttributeActionCreator);
+	}
+
+	_createClass(UserAttributeActionCreator, null, [{
+		key: "getUserBio",
+		value: function getUserBio() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO
+			});
+		}
+	}, {
+		key: "onGetUserBio",
+		value: function onGetUserBio() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_BIO
+			});
+		}
+	}, {
+		key: "getUserEducation",
+		value: function getUserEducation() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION
+			});
+		}
+	}, {
+		key: "onGetUserEducation",
+		value: function onGetUserEducation() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_EDUCATION
+			});
+		}
+	}, {
+		key: "getUserSkills",
+		value: function getUserSkills() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS
+			});
+		}
+	}, {
+		key: "onGetUserSkills",
+		value: function onGetUserSkills() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_SKILLS
+			});
+		}
+	}, {
+		key: "getUserWorkExperience",
+		value: function getUserWorkExperience() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE
+			});
+		}
+	}, {
+		key: "onGetUserWorkExperience",
+		value: function onGetUserWorkExperience() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_WORK_EXPERIENCE
+			});
+		}
+	}, {
+		key: "getUserProjects",
+		value: function getUserProjects() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS
+			});
+		}
+	}, {
+		key: "onGetUserProjects",
+		value: function onGetUserProjects() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_PROJECTS
+			});
+		}
+		// This action is fired when a personal attribute has been selected and this will change the active nav tabs
+
+	}, {
+		key: "selectAttribute",
+		value: function selectAttribute(data) {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_2__enums_UserAttributeEnums__["a" /* default */].NEW_USER_ATTRIBUTE_SELECTION,
+				data: data
+			});
+		}
+	}]);
+
+	return UserAttributeActionCreator;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (UserAttributeActionCreator);
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6651,7 +6759,7 @@ exports['default'] = function (styles) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6660,114 +6768,6 @@ module.exports = exports['default'];
 
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_flux__["Dispatcher"]());
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_UserAttributeEnums__ = __webpack_require__(68);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-
-var UserAttributeActionCreator = function () {
-	function UserAttributeActionCreator() {
-		_classCallCheck(this, UserAttributeActionCreator);
-	}
-
-	_createClass(UserAttributeActionCreator, null, [{
-		key: "getUserBio",
-		value: function getUserBio() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO
-			});
-		}
-	}, {
-		key: "onGetUserBio",
-		value: function onGetUserBio() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_BIO
-			});
-		}
-	}, {
-		key: "getUserEducation",
-		value: function getUserEducation() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION
-			});
-		}
-	}, {
-		key: "onGetUserEducation",
-		value: function onGetUserEducation() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_EDUCATION
-			});
-		}
-	}, {
-		key: "getUserSkills",
-		value: function getUserSkills() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS
-			});
-		}
-	}, {
-		key: "onGetUserSkills",
-		value: function onGetUserSkills() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_SKILLS
-			});
-		}
-	}, {
-		key: "getUserWorkExperience",
-		value: function getUserWorkExperience() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE
-			});
-		}
-	}, {
-		key: "onGetUserWorkExperience",
-		value: function onGetUserWorkExperience() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_WORK_EXPERIENCE
-			});
-		}
-	}, {
-		key: "getUserProjects",
-		value: function getUserProjects() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS
-			});
-		}
-	}, {
-		key: "onGetUserProjects",
-		value: function onGetUserProjects() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_PROJECTS
-			});
-		}
-		// This action is fired when a personal attribute has been selected and this will change the active nav tabs
-
-	}, {
-		key: "selectAttribute",
-		value: function selectAttribute(data) {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_2__enums_UserAttributeEnums__["a" /* default */].NEW_USER_ATTRIBUTE_SELECTION,
-				data: data
-			});
-		}
-	}]);
-
-	return UserAttributeActionCreator;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (UserAttributeActionCreator);
 
 /***/ }),
 /* 13 */
@@ -6783,58 +6783,6 @@ var UserAttributeActionCreator = function () {
 
 /***/ }),
 /* 14 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__ = __webpack_require__(41);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-var MenuActionCreator = function () {
-	function MenuActionCreator() {
-		_classCallCheck(this, MenuActionCreator);
-	}
-
-	_createClass(MenuActionCreator, null, [{
-		key: "switchMainMenuOff",
-		value: function switchMainMenuOff() {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_OFF
-			});
-		}
-	}, {
-		key: "toggleMainMenu",
-		value: function toggleMainMenu(isMenuOpen) {
-			isMenuOpen ? __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_ON
-			}) : __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_OFF
-			});
-		}
-		// This action is dispatched when a new content component has been mounted
-
-	}, {
-		key: "selectOption",
-		value: function selectOption(data) {
-			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
-				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].NEW_MENU_SELECTION,
-				data: data
-			});
-		}
-	}]);
-
-	return MenuActionCreator;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (MenuActionCreator);
-
-/***/ }),
-/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -6853,7 +6801,7 @@ module.exports.Store = __webpack_require__(65);
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6930,6 +6878,58 @@ var Utilities = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Utilities);
 
 /***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__ = __webpack_require__(41);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+var MenuActionCreator = function () {
+	function MenuActionCreator() {
+		_classCallCheck(this, MenuActionCreator);
+	}
+
+	_createClass(MenuActionCreator, null, [{
+		key: "switchMainMenuOff",
+		value: function switchMainMenuOff() {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_OFF
+			});
+		}
+	}, {
+		key: "toggleMainMenu",
+		value: function toggleMainMenu(isMenuOpen) {
+			isMenuOpen ? __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_ON
+			}) : __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].MAIN_MENU_OFF
+			});
+		}
+		// This action is dispatched when a new content component has been mounted
+
+	}, {
+		key: "selectOption",
+		value: function selectOption(data) {
+			__WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */].dispatch({
+				actionType: __WEBPACK_IMPORTED_MODULE_1__enums_MenuEnums__["a" /* default */].NEW_MENU_SELECTION,
+				data: data
+			});
+		}
+	}]);
+
+	return MenuActionCreator;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (MenuActionCreator);
+
+/***/ }),
 /* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6961,6 +6961,34 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var v1 = __webpack_require__(299);
+var v4 = __webpack_require__(300);
+
+var uuid = v4;
+uuid.v1 = v1;
+uuid.v4 = v4;
+
+module.exports = uuid;
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__ = __webpack_require__(6);
+var _ApiRoutineEnums$GET_;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (_ApiRoutineEnums$GET_ = {}, _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO, "Get user bio"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION, "Get user education"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS, "Get user skills"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_WORK_EXPERIENCE, "Get user work experience"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS, "Get user projects"), _ApiRoutineEnums$GET_);
+
+/***/ }),
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7002,7 +7030,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7060,7 +7088,7 @@ module.exports = emptyFunction;
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7127,7 +7155,7 @@ var createPath = exports.createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7198,21 +7226,173 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__ = __webpack_require__(8);
-var _ApiRoutineEnums$GET_;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__ = __webpack_require__(307);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = (_ApiRoutineEnums$GET_ = {}, _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO, "Get user bio"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION, "Get user education"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS, "Get user skills"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_WORK_EXPERIENCE, "Get user work experience"), _defineProperty(_ApiRoutineEnums$GET_, __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS, "Get user projects"), _ApiRoutineEnums$GET_);
+
+
+
+/**
+ * The class centralises all Hamisor site's api calls and their dependencies
+ */
+
+var HamisorSiteApiHelper = function () {
+	function HamisorSiteApiHelper() {
+		_classCallCheck(this, HamisorSiteApiHelper);
+	}
+
+	_createClass(HamisorSiteApiHelper, null, [{
+		key: "getUserBio",
+		value: function getUserBio(payload, callback) {
+			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
+		}
+	}, {
+		key: "getUserEducation",
+		value: function getUserEducation(payload, callback) {
+			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
+		}
+	}, {
+		key: "getUserSkills",
+		value: function getUserSkills(payload, callback) {
+			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
+		}
+	}, {
+		key: "getUserWorkExperience",
+		value: function getUserWorkExperience(payload, callback) {
+			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
+		}
+	}, {
+		key: "getUserProjects",
+		value: function getUserProjects(payload, callback) {
+			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
+		}
+	}]);
+
+	return HamisorSiteApiHelper;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteApiHelper);
 
 /***/ }),
-/* 24 */
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_spinners__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var LOADER_COLOUR = "#18FFFF";
+
+var HamisorSiteLoader = function (_React$Component) {
+	_inherits(HamisorSiteLoader, _React$Component);
+
+	function HamisorSiteLoader() {
+		_classCallCheck(this, HamisorSiteLoader);
+
+		return _possibleConstructorReturn(this, (HamisorSiteLoader.__proto__ || Object.getPrototypeOf(HamisorSiteLoader)).apply(this, arguments));
+	}
+
+	_createClass(HamisorSiteLoader, [{
+		key: "render",
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ className: "hamisorSiteLoader" },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_spinners__["RingLoader"], {
+					color: LOADER_COLOUR,
+					loading: this.props.isLoading
+				})
+			);
+		}
+	}]);
+
+	return HamisorSiteLoader;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+HamisorSiteLoader.propTypes = {
+	isLoading: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteLoader);
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var HamisorSiteApiError = function (_React$Component) {
+	_inherits(HamisorSiteApiError, _React$Component);
+
+	function HamisorSiteApiError() {
+		_classCallCheck(this, HamisorSiteApiError);
+
+		return _possibleConstructorReturn(this, (HamisorSiteApiError.__proto__ || Object.getPrototypeOf(HamisorSiteApiError)).apply(this, arguments));
+	}
+
+	_createClass(HamisorSiteApiError, [{
+		key: "render",
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ className: "hamisorSiteApiError alert alert-danger" },
+				"Fail to ",
+				this.props.routineName
+			);
+		}
+	}]);
+
+	return HamisorSiteApiError;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+HamisorSiteApiError.propTypes = {
+	routineName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteApiError);
+
+/***/ }),
+/* 28 */
 /***/ (function(module, exports) {
 
 var g;
@@ -7239,7 +7419,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 25 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7253,7 +7433,7 @@ module.exports = g;
 
 
 
-var emptyFunction = __webpack_require__(19);
+var emptyFunction = __webpack_require__(21);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -7307,7 +7487,7 @@ if (true) {
 module.exports = warning;
 
 /***/ }),
-/* 26 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7315,7 +7495,7 @@ module.exports = warning;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(24);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -7383,193 +7563,13 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var v1 = __webpack_require__(299);
-var v4 = __webpack_require__(300);
-
-var uuid = v4;
-uuid.v1 = v1;
-uuid.v4 = v4;
-
-module.exports = uuid;
-
-
-/***/ }),
-/* 28 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__ = __webpack_require__(73);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__ = __webpack_require__(307);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-
-
-/**
- * The class centralises all Hamisor site's api calls and their dependencies
- */
-
-var HamisorSiteApiHelper = function () {
-	function HamisorSiteApiHelper() {
-		_classCallCheck(this, HamisorSiteApiHelper);
-	}
-
-	_createClass(HamisorSiteApiHelper, null, [{
-		key: "getUserBio",
-		value: function getUserBio(payload, callback) {
-			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
-		}
-	}, {
-		key: "getUserEducation",
-		value: function getUserEducation(payload, callback) {
-			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_EDUCATION, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
-		}
-	}, {
-		key: "getUserSkills",
-		value: function getUserSkills(payload, callback) {
-			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_SKILLS, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
-		}
-	}, {
-		key: "getUserWorkExperience",
-		value: function getUserWorkExperience(payload, callback) {
-			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_WORK_EXPERIENCE, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
-		}
-	}, {
-		key: "getUserProjects",
-		value: function getUserProjects(payload, callback) {
-			__WEBPACK_IMPORTED_MODULE_0__common_NetworkingUtilities__["a" /* default */].networkRequest(__WEBPACK_IMPORTED_MODULE_3__maps_ApiEndpointMap__["a" /* default */].getEndpoint(__WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS), __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS, __WEBPACK_IMPORTED_MODULE_1__common_enums_HttpVerbsEnums__["a" /* default */].GET, payload, callback);
-		}
-	}]);
-
-	return HamisorSiteApiHelper;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteApiHelper);
-
-/***/ }),
-/* 29 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_spinners__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-
-var LOADER_COLOUR = "#18FFFF";
-
-var HamisorSiteLoader = function (_React$Component) {
-	_inherits(HamisorSiteLoader, _React$Component);
-
-	function HamisorSiteLoader() {
-		_classCallCheck(this, HamisorSiteLoader);
-
-		return _possibleConstructorReturn(this, (HamisorSiteLoader.__proto__ || Object.getPrototypeOf(HamisorSiteLoader)).apply(this, arguments));
-	}
-
-	_createClass(HamisorSiteLoader, [{
-		key: "render",
-		value: function render() {
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"div",
-				{ className: "hamisorSiteLoader" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_spinners__["RingLoader"], {
-					color: LOADER_COLOUR,
-					loading: this.props.isLoading
-				})
-			);
-		}
-	}]);
-
-	return HamisorSiteLoader;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-HamisorSiteLoader.propTypes = {
-	isLoading: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteLoader);
-
-/***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-
-var HamisorSiteApiError = function (_React$Component) {
-	_inherits(HamisorSiteApiError, _React$Component);
-
-	function HamisorSiteApiError() {
-		_classCallCheck(this, HamisorSiteApiError);
-
-		return _possibleConstructorReturn(this, (HamisorSiteApiError.__proto__ || Object.getPrototypeOf(HamisorSiteApiError)).apply(this, arguments));
-	}
-
-	_createClass(HamisorSiteApiError, [{
-		key: "render",
-		value: function render() {
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				"div",
-				{ className: "hamisorSiteApiError alert alert-danger" },
-				"Fail to ",
-				this.props.routineName
-			);
-		}
-	}]);
-
-	return HamisorSiteApiError;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-HamisorSiteApiError.propTypes = {
-	routineName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (HamisorSiteApiError);
-
-/***/ }),
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 var normalizeHeaderName = __webpack_require__(209);
 
 var DEFAULT_CONTENT_TYPE = {
@@ -7778,8 +7778,8 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 if (true) {
-  var invariant = __webpack_require__(6);
-  var warning = __webpack_require__(25);
+  var invariant = __webpack_require__(7);
+  var warning = __webpack_require__(29);
   var ReactPropTypesSecret = __webpack_require__(52);
   var loggedTypeFailures = {};
 }
@@ -7920,7 +7920,7 @@ var _valueEqual = __webpack_require__(55);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(21);
+var _PathUtils = __webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8384,10 +8384,10 @@ var createTransitionManager = function createTransitionManager() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_UserAttributeEnums__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_RouteEnums__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__maps_RouteMap__ = __webpack_require__(18);
@@ -11012,7 +11012,7 @@ Popper.Defaults = Defaults;
 /* harmony default export */ __webpack_exports__["default"] = (Popper);
 //# sourceMappingURL=popper.js.map
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(24)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28)))
 
 /***/ }),
 /* 45 */
@@ -21410,7 +21410,7 @@ module.exports = function bind(fn, thisArg) {
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 var settle = __webpack_require__(210);
 var buildURL = __webpack_require__(212);
 var parseHeaders = __webpack_require__(213);
@@ -22368,7 +22368,7 @@ module.exports = exports['default'];
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -22424,17 +22424,6 @@ var MenuList = function (_React$Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "li",
-                    { className: "nav-item " + (this.props.currentMenuOption === __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG ? "active" : "") },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
-                        { className: "nav-link",
-                            to: __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG],
-                            onClick: this.props.onNavigationItemClick },
-                        "Blog"
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
                     { className: "nav-item " + (this.props.currentMenuOption === __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].PROJECTS ? "active" : "") },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
@@ -22442,6 +22431,17 @@ var MenuList = function (_React$Component) {
                             to: __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].PROJECTS],
                             onClick: this.props.onNavigationItemClick },
                         "Projects"
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "li",
+                    { className: "nav-item " + (this.props.currentMenuOption === __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG ? "active" : "") },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
+                        { className: "nav-link",
+                            to: __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG],
+                            onClick: this.props.onNavigationItemClick },
+                        "Blog"
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -22491,7 +22491,7 @@ MenuList.propTypes = {
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 /**
  * FluxStoreGroup allows you to execute a callback on every dispatch after
@@ -22575,7 +22575,7 @@ var _require = __webpack_require__(286);
 
 var EventEmitter = _require.EventEmitter;
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 /**
  * This class represents the most basic functionality for a FluxStore. Do not
@@ -22724,10 +22724,10 @@ module.exports = EmitterSubscription;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_MenuEnums__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -35009,7 +35009,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(200);
-module.exports = __webpack_require__(354);
+module.exports = __webpack_require__(357);
 
 
 /***/ }),
@@ -52197,7 +52197,7 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24), __webpack_require__(43)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28), __webpack_require__(43)(module)))
 
 /***/ }),
 /* 203 */
@@ -56143,7 +56143,7 @@ module.exports = __webpack_require__(205);
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 var bind = __webpack_require__(46);
 var Axios = __webpack_require__(207);
 var defaults = __webpack_require__(31);
@@ -56230,7 +56230,7 @@ function isSlowBuffer (obj) {
 
 
 var defaults = __webpack_require__(31);
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 var InterceptorManager = __webpack_require__(217);
 var dispatchRequest = __webpack_require__(218);
 
@@ -56505,7 +56505,7 @@ process.umask = function() { return 0; };
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 module.exports = function normalizeHeaderName(headers, normalizedName) {
   utils.forEach(headers, function processHeader(value, name) {
@@ -56585,7 +56585,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 function encode(val) {
   return encodeURIComponent(val).
@@ -56658,7 +56658,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 // Headers whose duplicates are ignored by node
 // c.f. https://nodejs.org/api/http.html#http_message_headers
@@ -56718,7 +56718,7 @@ module.exports = function parseHeaders(headers) {
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -56836,7 +56836,7 @@ module.exports = btoa;
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -56896,7 +56896,7 @@ module.exports = (
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 function InterceptorManager() {
   this.handlers = [];
@@ -56955,7 +56955,7 @@ module.exports = InterceptorManager;
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 var transformData = __webpack_require__(219);
 var isCancel = __webpack_require__(49);
 var defaults = __webpack_require__(31);
@@ -57048,7 +57048,7 @@ module.exports = function dispatchRequest(config) {
 "use strict";
 
 
-var utils = __webpack_require__(7);
+var utils = __webpack_require__(8);
 
 /**
  * Transform the data for a request or a response
@@ -57218,7 +57218,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__menu_BurgerMenu__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__menu_HeaderMenu__ = __webpack_require__(291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__content_Content__ = __webpack_require__(292);
@@ -57296,9 +57296,9 @@ if (true) {
 
 var _assign = __webpack_require__(32);
 var emptyObject = __webpack_require__(51);
-var invariant = __webpack_require__(6);
-var warning = __webpack_require__(25);
-var emptyFunction = __webpack_require__(19);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(29);
+var emptyFunction = __webpack_require__(21);
 var checkPropTypes = __webpack_require__(33);
 
 // TODO: this is special because it gets imported during build.
@@ -58711,11 +58711,11 @@ if (true) {
 'use strict';
 
 var React = __webpack_require__(1);
-var invariant = __webpack_require__(6);
-var warning = __webpack_require__(25);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(29);
 var ExecutionEnvironment = __webpack_require__(227);
 var _assign = __webpack_require__(32);
-var emptyFunction = __webpack_require__(19);
+var emptyFunction = __webpack_require__(21);
 var checkPropTypes = __webpack_require__(33);
 var getActiveElement = __webpack_require__(228);
 var shallowEqual = __webpack_require__(34);
@@ -75736,9 +75736,9 @@ BrowserRouter.propTypes = {
 
 
 
-var emptyFunction = __webpack_require__(19);
-var invariant = __webpack_require__(6);
-var warning = __webpack_require__(25);
+var emptyFunction = __webpack_require__(21);
+var invariant = __webpack_require__(7);
+var warning = __webpack_require__(29);
 var assign = __webpack_require__(32);
 
 var ReactPropTypesSecret = __webpack_require__(52);
@@ -76294,7 +76294,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(35);
 
-var _PathUtils = __webpack_require__(21);
+var _PathUtils = __webpack_require__(23);
 
 var _createTransitionManager = __webpack_require__(36);
 
@@ -76671,7 +76671,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(35);
 
-var _PathUtils = __webpack_require__(21);
+var _PathUtils = __webpack_require__(23);
 
 var _createTransitionManager = __webpack_require__(36);
 
@@ -77075,7 +77075,7 @@ var _warning = __webpack_require__(5);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(21);
+var _PathUtils = __webpack_require__(23);
 
 var _LocationUtils = __webpack_require__(35);
 
@@ -77988,10 +77988,10 @@ Redirect.contextTypes = {
 /* unused harmony reexport createHashHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(254);
 /* unused harmony reexport createMemoryHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(30);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(24);
 /* unused harmony reexport parsePath */
 /* unused harmony reexport createPath */
 
@@ -78013,8 +78013,8 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(60);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -78317,8 +78317,8 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(60);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -78636,8 +78636,8 @@ var createHashHistory = function createHashHistory() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(40);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -78821,7 +78821,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(38);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -79173,7 +79173,7 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_burger_menu__ = __webpack_require__(263);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_burger_menu___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_burger_menu__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_MenuList__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__actions_MenuActionCreator__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__stores_menu_MenuStore__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_menu_MenuOptionStore__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stores_user_UserAttributeOptionStore__ = __webpack_require__(42);
@@ -79305,7 +79305,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -79666,7 +79666,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -79714,7 +79714,7 @@ var _snapsvgImporter = __webpack_require__(62);
 
 var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88407,7 +88407,7 @@ var _snapsvgImporter = __webpack_require__(62);
 
 var _snapsvgImporter2 = _interopRequireDefault(_snapsvgImporter);
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88519,7 +88519,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88558,7 +88558,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88600,7 +88600,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88641,7 +88641,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88683,7 +88683,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88735,7 +88735,7 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-var _menuFactory = __webpack_require__(10);
+var _menuFactory = __webpack_require__(11);
 
 var _menuFactory2 = _interopRequireDefault(_menuFactory);
 
@@ -88841,7 +88841,7 @@ exports.__esModule = true;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 var _prefix = 'ID_';
 
@@ -89059,8 +89059,8 @@ module.exports = Dispatcher;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_MenuEnums__ = __webpack_require__(41);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -89155,7 +89155,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== 'function' 
 var FluxContainerSubscriptions = __webpack_require__(283);
 var React = __webpack_require__(1);
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 var shallowEqual = __webpack_require__(34);
 
 var Component = React.Component;
@@ -89552,7 +89552,7 @@ module.exports = FluxContainerSubscriptions;
 
 var FluxStoreGroup = __webpack_require__(64);
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 /**
  * `FluxContainer` should be preferred over this mixin, but it requires using
@@ -89685,7 +89685,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== 'function' 
 var FluxStore = __webpack_require__(65);
 
 var abstractMethod = __webpack_require__(290);
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 /**
  * This is the basic building block of a Flux application. All of your stores
@@ -89829,8 +89829,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var EmitterSubscription = __webpack_require__(66);
 var EventSubscriptionVendor = __webpack_require__(289);
 
-var emptyFunction = __webpack_require__(19);
-var invariant = __webpack_require__(6);
+var emptyFunction = __webpack_require__(21);
+var invariant = __webpack_require__(7);
 
 /**
  * @class BaseEventEmitter
@@ -90078,7 +90078,7 @@ module.exports = EventSubscription;
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 /**
  * EventSubscriptionVendor stores a set of EventSubscriptions that are
@@ -90185,7 +90185,7 @@ module.exports = EventSubscriptionVendor;
 
 
 
-var invariant = __webpack_require__(6);
+var invariant = __webpack_require__(7);
 
 function abstractMethod(className, methodName) {
    true ?  true ? invariant(false, 'Subclasses of %s must override %s() with their own implementation.', className, methodName) : invariant(false) : undefined;
@@ -90201,7 +90201,7 @@ module.exports = abstractMethod;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_MenuList__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_MenuActionCreator__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__stores_menu_MenuOptionStore__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__stores_user_UserAttributeOptionStore__ = __webpack_require__(42);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -90292,12 +90292,12 @@ var HeaderMenu = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contents_Home__ = __webpack_require__(293);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contents_About__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contents_Blog__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contents_Projects__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contents_Contact__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__contents_Contact__ = __webpack_require__(356);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__enums_RouteEnums__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__maps_RouteMap__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -90334,11 +90334,6 @@ var Content = function (_React$Component) {
                 "div",
                 { className: "content container-fluid" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "h3",
-                    null,
-                    "This is content"
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Switch */],
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Route */], { exact: true, path: __WEBPACK_IMPORTED_MODULE_8__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_7__enums_RouteEnums__["a" /* default */].HOME], component: __WEBPACK_IMPORTED_MODULE_2__contents_Home__["a" /* default */] }),
@@ -90363,7 +90358,7 @@ var Content = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(16);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -90412,7 +90407,7 @@ var Home = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_user_attributes_UserAttributes__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_user_bio_UserBio__ = __webpack_require__(348);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -90518,10 +90513,10 @@ var UserAttributes = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_RouteEnums__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_RouteMap__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_user_UserAttributeOptionStore__ = __webpack_require__(42);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -90639,7 +90634,7 @@ var UserAttributesNav = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__maps_RouteMap__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contents_education_Education__ = __webpack_require__(298);
@@ -90699,15 +90694,15 @@ var UserAttributesContent = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_ApiRoutineNameMap__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_ApiRoutineNameMap__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stores_user_UserEducationStore__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_components_HamisorSiteApiError__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_components_HamisorSiteApiError__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__EducationDetail__ = __webpack_require__(339);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -90967,14 +90962,14 @@ module.exports = v4;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(25);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -91075,11 +91070,11 @@ var UserEducationStore = function (_Store) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_qs__ = __webpack_require__(303);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_qs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_qs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_HttpVerbsEnums__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_NetworkingFailedRequestCodeEnums__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_NetworkingFailedRequestCodeToReasonMap__ = __webpack_require__(306);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hamisor_personal_site_maps_ApiRoutineNameMap__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hamisor_personal_site_maps_ApiRoutineNameMap__ = __webpack_require__(20);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -91609,7 +91604,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__enums_ApiRoutineEnums__ = __webpack_require__(6);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -93279,7 +93274,7 @@ if (typeof self !== 'undefined') {
 var result = Object(__WEBPACK_IMPORTED_MODULE_0__ponyfill_js__["a" /* default */])(root);
 /* harmony default export */ __webpack_exports__["a"] = (result);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(24), __webpack_require__(319)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(28), __webpack_require__(319)(module)))
 
 /***/ }),
 /* 319 */
@@ -96089,12 +96084,12 @@ EducationDetail.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiRoutineNameMap__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiRoutineNameMap__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_user_UserSkillsStore__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__SkillsDetail__ = __webpack_require__(342);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -96203,14 +96198,14 @@ var Skills = function (_React$Component) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(25);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -96376,7 +96371,7 @@ SkillsDetail.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_uuid__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_uuid__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_uuid__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -96435,14 +96430,14 @@ SkillDetail.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiRoutineNameMap__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__maps_ApiRoutineNameMap__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__actions_UserAttributeActionCreator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_user_UserWorkExperienceStore__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__WorkExperienceDetail__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_uuid__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_uuid__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_uuid__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -96555,14 +96550,14 @@ var WorkExperience = function (_React$Component) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(25);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -96667,7 +96662,7 @@ var UserWorkExperienceStore = function (_Store) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uuid__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uuid__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_uuid__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -96762,7 +96757,7 @@ var WorkExperienceDetail = function (_React$Component) {
 							"li",
 							{ key: __WEBPACK_IMPORTED_MODULE_3_uuid___default()() },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"h6",
+								"p",
 								null,
 								item_duty.list_description
 							),
@@ -97064,13 +97059,13 @@ webpackContext.id = 347;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_UserAttributeActionCreator__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_UserAttributeActionCreator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_ApiRoutineNameMap__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__maps_ApiRoutineNameMap__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores_user_UserBioStore__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteApiError__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__UserBioDetail__ = __webpack_require__(350);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -97178,14 +97173,14 @@ var UserBio = function (_React$Component) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(25);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97357,7 +97352,6 @@ var UserBioDetail = function (_React$Component) {
 								"Facebook"
 							)
 						),
-						"h",
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							"li",
 							{ className: "nav-item" },
@@ -97395,7 +97389,7 @@ UserBioDetail.propTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(16);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97444,7 +97438,8 @@ var Blog = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__projects_UserProjectsDetail__ = __webpack_require__(353);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97452,6 +97447,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -97476,7 +97472,7 @@ var Projects = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "projects" },
-				"Projects page is under construction"
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__projects_UserProjectsDetail__["a" /* default */], null)
 			);
 		}
 	}]);
@@ -97493,7 +97489,327 @@ var Projects = function (_React$Component) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_uuid__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__maps_ApiRoutineNameMap__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__stores_user_UserProjectsStore__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__common_components_HamisorSiteApiError__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__UserProjectDetail__ = __webpack_require__(355);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+
+
+
+var UserProjectsDetail = function (_React$Component) {
+    _inherits(UserProjectsDetail, _React$Component);
+
+    function UserProjectsDetail() {
+        _classCallCheck(this, UserProjectsDetail);
+
+        var _this = _possibleConstructorReturn(this, (UserProjectsDetail.__proto__ || Object.getPrototypeOf(UserProjectsDetail)).call(this));
+
+        _this.subscriptions = [];
+        _this.state = _this._getStateFromStore();
+        _this._onStateChange = _this._onStateChange.bind(_this);
+        return _this;
+    }
+
+    _createClass(UserProjectsDetail, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            this.subscriptions.push(__WEBPACK_IMPORTED_MODULE_6__stores_user_UserProjectsStore__["a" /* default */].addListener(this._onStateChange));
+            __WEBPACK_IMPORTED_MODULE_2__actions_UserAttributeActionCreator__["a" /* default */].getUserProjects();
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            var info = null;
+            var isLoading = false;
+            switch (this.state.dataStatus) {
+                case __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].LOADING:
+                    isLoading = true;
+                    break;
+                case __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].SUCCESS:
+                    isLoading = false;
+                    info = this.state.userProjects.map(function (item_project) {
+                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__UserProjectDetail__["a" /* default */], { key: __WEBPACK_IMPORTED_MODULE_1_uuid___default()(),
+                            projectTitle: item_project.project_name,
+                            projectDescription: item_project.project_description,
+                            techKeywords: item_project.tech_keywords,
+                            demoUrl: item_project.demo_url,
+                            note: item_project.note });
+                    });
+                    break;
+                case __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].FAIL:
+                    isLoading = false;
+                    info = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__common_components_HamisorSiteApiError__["a" /* default */], { routineName: __WEBPACK_IMPORTED_MODULE_5__maps_ApiRoutineNameMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__["a" /* default */].GET_USER_BIO] });
+                    break;
+                default:
+                    break;
+            }
+
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "userProjects" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+                info
+            );
+        }
+    }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+            this.subscriptions.map(function (item_subscription) {
+                item_subscription.remove();
+            });
+        }
+        // Private
+
+    }, {
+        key: "_onStateChange",
+        value: function _onStateChange() {
+            this.setState(this._getStateFromStore());
+        }
+    }, {
+        key: "_getStateFromStore",
+        value: function _getStateFromStore() {
+            return {
+                dataStatus: __WEBPACK_IMPORTED_MODULE_6__stores_user_UserProjectsStore__["a" /* default */].getApiStatus(),
+                userProjects: __WEBPACK_IMPORTED_MODULE_6__stores_user_UserProjectsStore__["a" /* default */].getUserProjects()
+            };
+        }
+    }]);
+
+    return UserProjectsDetail;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (UserProjectsDetail);
+
+/***/ }),
+/* 354 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_flux_utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_flux_utils__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_Utilities__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__ = __webpack_require__(25);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+var UserProjectsStore = function (_Store) {
+	_inherits(UserProjectsStore, _Store);
+
+	function UserProjectsStore() {
+		_classCallCheck(this, UserProjectsStore);
+
+		var _this = _possibleConstructorReturn(this, (UserProjectsStore.__proto__ || Object.getPrototypeOf(UserProjectsStore)).call(this, __WEBPACK_IMPORTED_MODULE_0__HamisorSiteAppDispatcher__["a" /* default */]));
+
+		_this._onGetUserProjects = _this._onGetUserProjects.bind(_this);
+		_this.loadingStatus = __WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].EMPTY;
+		_this.userProjects = {};
+		return _this;
+	}
+	// Public
+
+
+	_createClass(UserProjectsStore, [{
+		key: "getApiStatus",
+		value: function getApiStatus() {
+			return this.loadingStatus;
+		}
+	}, {
+		key: "getUserProjects",
+		value: function getUserProjects() {
+			return this.userProjects;
+		}
+	}, {
+		key: "__onDispatch",
+		value: function __onDispatch(payload) {
+			var action = payload.actionType;
+			switch (action) {
+				case __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__["a" /* default */].GET_USER_PROJECTS:
+					if (__WEBPACK_IMPORTED_MODULE_2__common_Utilities__["a" /* default */].isEmpty(this.userProjects)) this._getUserProjects();
+					this.__emitChange();
+					break;
+				case __WEBPACK_IMPORTED_MODULE_4__enums_ApiRoutineEnums__["a" /* default */].ON_GET_USER_PROJECTS:
+					this.__emitChange();
+					break;
+				default:
+					break;
+			}
+		}
+		// Private
+
+	}, {
+		key: "_setUserProjects",
+		value: function _setUserProjects(newUserProjects) {
+			this.userProjects = newUserProjects;
+		}
+	}, {
+		key: "_setLoadingStatus",
+		value: function _setLoadingStatus(newLoadingStatus) {
+			this.loadingStatus = newLoadingStatus;
+		}
+	}, {
+		key: "_getUserProjects",
+		value: function _getUserProjects() {
+			this._setLoadingStatus(__WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].LOADING);
+			__WEBPACK_IMPORTED_MODULE_6__HamisorSiteApiHelper__["a" /* default */].getUserProjects(null, this._onGetUserProjects);
+		}
+	}, {
+		key: "_onGetUserProjects",
+		value: function _onGetUserProjects(error, data) {
+			if (error) this._setLoadingStatus(__WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].FAIL);else {
+				this._setLoadingStatus(__WEBPACK_IMPORTED_MODULE_3__common_enums_ApiCallDataStatusEnums__["a" /* default */].SUCCESS);
+				this._setUserProjects(data);
+			}
+
+			__WEBPACK_IMPORTED_MODULE_5__actions_UserAttributeActionCreator__["a" /* default */].onGetUserProjects();
+		}
+	}]);
+
+	return UserProjectsStore;
+}(__WEBPACK_IMPORTED_MODULE_1_flux_utils__["Store"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (new UserProjectsStore());
+
+/***/ }),
+/* 355 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_uuid__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_uuid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_uuid__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var UserProjectDetail = function (_React$Component) {
+    _inherits(UserProjectDetail, _React$Component);
+
+    function UserProjectDetail() {
+        _classCallCheck(this, UserProjectDetail);
+
+        return _possibleConstructorReturn(this, (UserProjectDetail.__proto__ || Object.getPrototypeOf(UserProjectDetail)).apply(this, arguments));
+    }
+
+    _createClass(UserProjectDetail, [{
+        key: "render",
+        value: function render() {
+            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "div",
+                { className: "userProjectDetail" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "h4",
+                    null,
+                    this.props.projectTitle
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "p",
+                    null,
+                    this.props.projectDescription
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "h6",
+                    null,
+                    "Tech Keywords:"
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "ul",
+                    null,
+                    this.props.techKeywords.map(function (item_keyword) {
+                        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "li",
+                            { key: __WEBPACK_IMPORTED_MODULE_2_uuid___default()() },
+                            item_keyword
+                        );
+                    })
+                ),
+                this.props.demoUrl ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "a",
+                    { href: this.props.demoUrl,
+                        className: "btn btn-primary",
+                        role: "button",
+                        target: "_blank" },
+                    "View"
+                ) : null,
+                this.props.note ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "p",
+                    null,
+                    "Note: " + this.props.note
+                ) : null
+            );
+        }
+    }]);
+
+    return UserProjectDetail;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+UserProjectDetail.propTypes = {
+    projectTitle: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+    projectDescription: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string.isRequired,
+    techKeywords: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.array.isRequired,
+    note: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
+    demoUrl: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (UserProjectDetail);
+
+/***/ }),
+/* 356 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__actions_MenuActionCreator__ = __webpack_require__(16);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97536,7 +97852,7 @@ var Contact = function (_React$Component) {
 /* harmony default export */ __webpack_exports__["a"] = (Contact);
 
 /***/ }),
-/* 354 */
+/* 357 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

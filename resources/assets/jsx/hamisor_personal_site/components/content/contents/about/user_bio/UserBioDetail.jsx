@@ -20,7 +20,7 @@ class UserBioDetail extends React.Component
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href={this.props.facebookUrl} target="_blank">Facebook</a>
-							</li>h
+							</li>
 							<li className="nav-item">
 								<a className="nav-link" href={this.props.linkedinUrl} target="_blank">Linkedin</a>
 							</li>

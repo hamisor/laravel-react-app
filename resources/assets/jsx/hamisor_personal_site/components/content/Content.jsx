@@ -13,7 +13,6 @@ class Content extends React.Component
     render()
     {
         return  <div className="content container-fluid">
-                    <h3>This is content</h3>
                     <Switch>
                         <Route exact path={RouteMap[RouteEnums.HOME]}       component={Home}/>
                         <Route path={RouteMap[RouteEnums.ABOUT_ME]}         component={About}/>

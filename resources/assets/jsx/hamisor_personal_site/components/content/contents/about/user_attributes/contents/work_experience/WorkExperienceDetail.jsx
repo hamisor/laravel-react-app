@@ -38,7 +38,7 @@ class WorkExperienceDetail extends React.Component
 												</ul>;
 
 								return  <li key={Uuid()}>
-											<h6>{item_duty.list_description}</h6>
+											<p>{item_duty.list_description}</p>
 											{subList}
 										</li>;
 							})

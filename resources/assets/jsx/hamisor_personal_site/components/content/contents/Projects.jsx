@@ -1,5 +1,6 @@
 import React 				from "react";
 import MenuActionCreator 	from "../../../actions/MenuActionCreator";
+import UserProjectsDetail	from "./projects/UserProjectsDetail";
 
 class Projects extends React.Component
 {
@@ -11,7 +12,7 @@ class Projects extends React.Component
 	{
 		return(
 			<div className="projects">
-				Projects page is under construction
+				<UserProjectsDetail/>
 			</div>
 		);
 	}
