@@ -1,8 +1,11 @@
 import React                        from "react";
+import ApiCallDataStatusEnums       from "../../../../../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../../../../../enums/ApiRoutineEnums";
+import ApiRoutineNameMap			from "../../../../../../maps/ApiRoutineNameMap";
 import UserAttributeActionCreator   from "../../../../../../actions/UserAttributeActionCreator";
 import UserWorkExperienceStore      from "../../../../../../stores/user/UserWorkExperienceStore";
-import ApiCallDataStatusEnums       from "../../../../../../../common/enums/ApiCallDataStatusEnums";
 import HamisorSiteLoader			from "../../../../../../../common/components/HamisorSiteLoader";
+import HamisorSiteApiError			from "../../../../../../../common/components/HamisorSiteApiError";
 
 class WorkExperience extends React.Component
 {
@@ -34,7 +37,7 @@ class WorkExperience extends React.Component
 				break;
 			case ApiCallDataStatusEnums.FAIL:
 				isLoading 	= false;
-				info		= <div>Failed</div>;
+				info		= <HamisorSiteApiError routineName={ApiRoutineNameMap[ApiRoutineEnums.GET_USER_SKILLS]}/>;
 				break;
 			default:
 				break;

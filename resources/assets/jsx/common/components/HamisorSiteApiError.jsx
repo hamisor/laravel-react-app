@@ -6,7 +6,7 @@ class HamisorSiteApiError extends React.Component
 	render()
 	{
 		return  <div className='hamisorSiteApiError alert alert-danger'>
-					Fail to fetch {this.props.routineName}
+					Fail to {this.props.routineName}
 				</div>;
 	}
 }

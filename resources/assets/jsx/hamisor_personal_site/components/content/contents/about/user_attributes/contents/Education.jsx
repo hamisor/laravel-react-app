@@ -1,8 +1,11 @@
 import React                        from "react";
 import ApiCallDataStatusEnums 		from "../../../../../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../../../../../enums/ApiRoutineEnums";
+import ApiRoutineNameMap			from "../../../../../../maps/ApiRoutineNameMap";
 import UserAttributeActionCreator   from "../../../../../../actions/UserAttributeActionCreator";
 import UserEducationStore           from "../../../../../../stores/user/UserEducationStore";
 import HamisorSiteLoader			from "../../../../../../../common/components/HamisorSiteLoader";
+import HamisorSiteApiError			from "../../../../../../../common/components/HamisorSiteApiError";
 
 class Education extends React.Component
 {
@@ -34,7 +37,7 @@ class Education extends React.Component
 				break;
 			case ApiCallDataStatusEnums.FAIL:
 				isLoading 	= false;
-				info		= <div>Failed</div>;
+				info		= <HamisorSiteApiError routineName={ApiRoutineNameMap[ApiRoutineEnums.GET_USER_EDUCATION]}/>;
 				break;
 			default:
 				break;

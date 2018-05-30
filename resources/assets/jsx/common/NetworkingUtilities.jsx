@@ -3,6 +3,7 @@ import Utilities 								from "./Utilities";
 import HttpVerbsEnums 							from "./enums/HttpVerbsEnums";
 import NetworkingFailedRequestCodeEnums			from "./enums/NetworkingFailedRequestCodeEnums";
 import NetworkingFailedRequestCodeToReasonMap	from "./maps/NetworkingFailedRequestCodeToReasonMap";
+import ApiRoutineNameMap						from "../hamisor_personal_site/maps/ApiRoutineNameMap";
 
 class NetworkingUtilities
 {
@@ -21,24 +22,24 @@ class NetworkingUtilities
 		// Validations
 		if(typeof(callback) !== "function")
 		{
-			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.INVALID_CALLBACK_TYPE]} ]`);
+			console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.INVALID_CALLBACK_TYPE]} ]`);
 			return;
 		}
 		if(Utilities.isEmpty(url))
 		{
-			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_URL]} ]`);
+			console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_URL]} ]`);
 			callback(NetworkingFailedRequestCodeEnums.EMPTY_URL, null);
 			return;
 		}
 		if(Utilities.isEmpty(routineName))
 		{
-			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_ROUTINE_NAME]} ]`);
+			console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_ROUTINE_NAME]} ]`);
 			callback(NetworkingFailedRequestCodeEnums.EMPTY_ROUTINE_NAME, null);
 			return;
 		}
 		if(Utilities.isEmpty(method))
 		{
-			console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_REQUEST_METHOD]} ]`);
+			console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.EMPTY_REQUEST_METHOD]} ]`);
 			callback(NetworkingFailedRequestCodeEnums.EMPTY_REQUEST_METHOD, null);
 			return;
 		}
@@ -67,7 +68,7 @@ class NetworkingUtilities
 					requestConfig["paramsSerializer"] 	= params => Qs.stringify(params, {arrayFormat: "brackets"});
 					break;
 				default:
-					console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD]} ]`);
+					console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD]} ]`);
 					callback(NetworkingFailedRequestCodeEnums.UNKNOWN_REQUEST_METHOD, null);
 					return;
 			}
@@ -84,20 +85,20 @@ class NetworkingUtilities
 			{
 				// The request was made and the server responded with a status code
 				// that falls out of the range of 2xx
-				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.FAILED_RESPONSE]}, Blame Url [ ${url} ]]`);
+				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.FAILED_RESPONSE]}, Blame Url [ ${url} ]]`);
 				callback(NetworkingFailedRequestCodeEnums.FAILED_RESPONSE, null);
 			}
 			else if (error.request)
 			{
 				// The request was made but no response was received
-				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER]}, Blame Url [ ${url} ]]`);
+				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER]}, Blame Url [ ${url} ]]`);
 				console.error("Request is [ %o ]", error.request);
 				callback(NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER, null);
 			}
 			else
 			{
 				// Something happened in setting up the request that triggered an Error
-				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR]} ], Error message [ ${error.message} ]`);
+				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR]} ], Error message [ ${error.message} ]`);
 				callback(NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR, null);
 			}
 		});
