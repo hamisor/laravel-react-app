@@ -1,0 +1,29 @@
+.userBio
+{
+  .userBioDetail
+  {
+    .userProfileImgCol
+    {
+      margin-bottom: 40px;
+      img
+      {
+        max-height: 300px;
+      }
+    }
+    .userBioInfoCol
+    {
+      h4
+      {
+        padding-left: 15px;
+      }
+      img
+      {
+        height: 30px;
+        &:hover
+        {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}

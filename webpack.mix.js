@@ -18,7 +18,7 @@ const FlowWebpackPlugin     = require('flow-webpack-plugin');
  */
 
 mix
-// CLEAN UP PROCEDURE
+    // Clean up procedure
     .webpackConfig({
         plugins: [
             new CleanWebpackPlugin(['public/js', 'public/css']),
@@ -27,7 +27,7 @@ mix
             })
         ]
     })
-    // JS COMPILATION
+    // Js compilation
     .react('resources/assets/js/appHarness.js', 'public/js')
-    // SASS COMPILATION
+    // Sass compilation
     .sass('resources/assets/sass/appHarness.scss', 'public/css');

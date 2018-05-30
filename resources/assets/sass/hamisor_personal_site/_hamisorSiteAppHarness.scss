@@ -1,0 +1,39 @@
+// Hamisor site variables
+@import "variables/hamisorSiteColorUsageName";
+@import "variables/hamisorSiteFontSize";
+// Hamisor site mixins
+@import "mixins/mixins";
+
+// Hamisor site styles
+#reactApp
+{
+  #appContainer
+  {
+    height: 100vh;
+
+    // Global bootstrap override
+    a
+    {
+      color: black;
+      &:hover
+      {
+        color: black;
+      }
+    }
+
+    ////////////////////////////////////
+
+    @import "components/menu/burgerMenu";
+    #pageContainer
+    {
+      // Shared variables
+      $pageContainerHeight: 100%;
+      $headerMenuHeight:    80px;
+
+      height: $pageContainerHeight;
+      overflow: hidden;
+      @import "components/menu/headerMenu";
+      @import "components/content";
+    }
+  }
+}

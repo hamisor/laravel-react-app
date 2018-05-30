@@ -1,31 +1,29 @@
-// @flow
-import * as React from 'react';
+import React				from "react";
+import ReactDOM 			from "react-dom";
+import { BrowserRouter }	from "react-router-dom";
+import BurgerMenu           from "./menu/BurgerMenu";
+import HeaderMenu           from "./menu/HeaderMenu";
+import Content              from "./content/Content";
 
-type Props = {
-    foo: number,
-    bar?: string,
-};
-
-class PersonalSiteApp extends React.Component<Props>
+class PersonalSiteApp extends React.Component
 {
-	constructor()
-	{
-		super();
-	}
     render()
     {
 		return (
-			<div className="main">
-				<div className="header">
-                    This is header
-                </div>
-                <div className="content">
-                    This is content
-                    <span></span>
+            <div id="appContainer">
+                <BurgerMenu/>
+                <div id="pageContainer">
+                    <HeaderMenu/>
+                    <Content/>
                 </div>
             </div>
         );
     }
 }
 
-export default PersonalSiteApp
+ReactDOM.render(
+    <BrowserRouter>
+        <PersonalSiteApp />
+    </BrowserRouter>,
+    document.getElementById("reactApp")
+);

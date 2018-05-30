@@ -1,0 +1,82 @@
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bm-menu-wrap
+{
+  z-index: 1600 !important;
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: $hamisorSiteBurgerMenuBackgroundColor;
+  }
+
+  /* General sidebar styles */
+  .bm-menu
+  {
+    background: $hamisorSiteBurgerMenuBackgroundColor;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+
+    /* Wrapper for item list */
+    .bm-item-list
+    {
+      color: $hamisorSiteBurgerMenuListFontColor;
+      padding: 0.8em;
+      li {
+        list-style: none;
+        padding: 0;
+        a{
+          font-size: $hamisorSiteFontDeskTiny;
+          color: $hamisorSiteBurgerMenuListFontColor;
+        }
+      }
+      li.active
+      {
+        a{
+          font-size: $hamisorSiteFontDeskTiny;
+          color: $hamisorSiteBurgerMenuListFontColor;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button
+  {
+    height: 24px;
+    width: 24px;
+
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: $hamisorSiteBurgerMenuCloseBtnColor;
+    }
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button
+{
+  z-index: 1500 !important;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  left:40px;
+  top:32px;
+
+  .bm-burger-bars
+  {
+    background: black;
+    // OVERRIDE BURGER BAR THICKNESS
+    height: 15% !important;
+  }
+}
+
+

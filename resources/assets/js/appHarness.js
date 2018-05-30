@@ -13,4 +13,4 @@ require('./bootstrapHarness');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('../jsx/PersonalSiteReactAppRouter');
+require('../jsx/hamisor_personal_site/components/PersonalSiteApp');

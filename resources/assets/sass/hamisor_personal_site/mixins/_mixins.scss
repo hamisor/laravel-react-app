@@ -1,0 +1,6 @@
+@mixin calc-sub($dimensionName, $containerDimension, $neighbourDimension)
+{
+  #{$dimensionName}: -webkit-calc(#{$containerDimension} - #{$neighbourDimension});
+  #{$dimensionName}:    -moz-calc(#{$containerDimension} - #{$neighbourDimension});
+  #{$dimensionName}:         calc(#{$containerDimension} - #{$neighbourDimension});
+}
