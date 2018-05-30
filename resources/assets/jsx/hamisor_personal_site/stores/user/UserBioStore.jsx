@@ -1,9 +1,10 @@
-import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
-import { Store }                from "flux/utils";
-import Utilities 				from "../../../common/Utilities";
-import ApiCallDataStatusEnums	from "../../../common/enums/ApiCallDataStatusEnums";
-import ApiRoutineEnums			from "../../enums/ApiRoutineEnums";
-import HamisorSiteApiHelper		from "../../HamisorSiteApiHelper";
+import HamisorSiteAppDispatcher 	from "../../HamisorSiteAppDispatcher";
+import { Store }                	from "flux/utils";
+import Utilities 					from "../../../common/Utilities";
+import ApiCallDataStatusEnums		from "../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../enums/ApiRoutineEnums";
+import UserAttributeActionCreator	from "../../actions/UserAttributeActionCreator";
+import HamisorSiteApiHelper			from "../../HamisorSiteApiHelper";
 
 class UserBioStore extends Store
 {
@@ -31,6 +32,9 @@ class UserBioStore extends Store
 			case ApiRoutineEnums.GET_USER_BIO:
 				if(Utilities.isEmpty(this.userBio))
 					this._getUserBio();
+				this.__emitChange();
+				break;
+			case ApiRoutineEnums.ON_GET_USER_BIO:
 				this.__emitChange();
 				break;
 			default:
@@ -61,7 +65,7 @@ class UserBioStore extends Store
 			this._setUserBio(data);
 		}
 
-		this.__emitChange();
+		UserAttributeActionCreator.onGetUserBio();
 	}
 }
 

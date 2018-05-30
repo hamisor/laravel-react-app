@@ -97,7 +97,7 @@ class NetworkingUtilities
 			else
 			{
 				// Something happened in setting up the request that triggered an Error
-				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR]}, Error ${error.message} ]]`);
+				console.error(`Network request failed! Routine [ ${routineName} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR]} ], Error message [ ${error.message} ]`);
 				callback(NetworkingFailedRequestCodeEnums.REQUEST_CONFIG_ERROR, null);
 			}
 		});
