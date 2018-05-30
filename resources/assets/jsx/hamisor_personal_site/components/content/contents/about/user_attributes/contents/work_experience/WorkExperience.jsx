@@ -1,11 +1,13 @@
 import React                        from "react";
-import ApiCallDataStatusEnums       from "../../../../../../../common/enums/ApiCallDataStatusEnums";
-import ApiRoutineEnums				from "../../../../../../enums/ApiRoutineEnums";
-import ApiRoutineNameMap			from "../../../../../../maps/ApiRoutineNameMap";
-import UserAttributeActionCreator   from "../../../../../../actions/UserAttributeActionCreator";
-import UserWorkExperienceStore      from "../../../../../../stores/user/UserWorkExperienceStore";
-import HamisorSiteLoader			from "../../../../../../../common/components/HamisorSiteLoader";
-import HamisorSiteApiError			from "../../../../../../../common/components/HamisorSiteApiError";
+import ApiCallDataStatusEnums       from "../../../../../../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../../../../../../enums/ApiRoutineEnums";
+import ApiRoutineNameMap			from "../../../../../../../maps/ApiRoutineNameMap";
+import UserAttributeActionCreator   from "../../../../../../../actions/UserAttributeActionCreator";
+import UserWorkExperienceStore      from "../../../../../../../stores/user/UserWorkExperienceStore";
+import HamisorSiteLoader			from "../../../../../../../../common/components/HamisorSiteLoader";
+import HamisorSiteApiError			from "../../../../../../../../common/components/HamisorSiteApiError";
+import WorkExperienceDetail			from "./WorkExperienceDetail";
+import Uuid							from 'uuid';
 
 class WorkExperience extends React.Component
 {
@@ -33,7 +35,15 @@ class WorkExperience extends React.Component
 				break;
 			case ApiCallDataStatusEnums.SUCCESS:
 				isLoading 	= false;
-				info		= <span>{JSON.stringify(this.state.userWorkExperience)}</span>;
+				info		= this.state.userWorkExperience.map(item_workExperience => 
+					<WorkExperienceDetail key={Uuid()}
+										  companyName={item_workExperience.company_name}
+										  location={item_workExperience.location}
+										  logoUrl={item_workExperience.logo}
+										  job_title={item_workExperience.job_title}
+										  startDate={item_workExperience.start_date}
+										  finishDate={item_workExperience.finish_date}
+										  duties={item_workExperience.duties}/>);
 				break;
 			case ApiCallDataStatusEnums.FAIL:
 				isLoading 	= false;

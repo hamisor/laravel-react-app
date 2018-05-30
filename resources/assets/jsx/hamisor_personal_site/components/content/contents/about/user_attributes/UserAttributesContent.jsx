@@ -4,7 +4,7 @@ import RouteMap             from "../../../../../maps/RouteMap";
 import RouteEnums           from "../../../../../enums/RouteEnums";
 import Education            from "./contents/education/Education";
 import Skills               from "./contents/skills/Skills";
-import WorkExperience       from "./contents/WorkExperience";
+import WorkExperience       from "./contents/work_experience/WorkExperience";
 
 class UserAttributesContent extends React.Component
 {
