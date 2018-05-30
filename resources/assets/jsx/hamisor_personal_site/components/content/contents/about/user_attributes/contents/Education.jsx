@@ -1,18 +1,66 @@
 import React                        from "react";
+import ApiCallDataStatusEnums 		from "../../../../../../../common/enums/ApiCallDataStatusEnums";
 import UserAttributeActionCreator   from "../../../../../../actions/UserAttributeActionCreator";
+import UserEducationStore           from "../../../../../../stores/user/UserEducationStore";
+import HamisorSiteLoader			from "../../../../../../../common/components/HamisorSiteLoader";
 
 class Education extends React.Component
 {
+	constructor()
+	{
+		super();
+		this.subscriptions 	= [];
+		this.state         	= this._getStateFromStore();
+		this._onStateChange	= this._onStateChange.bind(this);
+	}
     componentDidMount()
     {
-        UserAttributeActionCreator.selectAttribute(this.props.match.path);
-    }
+		this.subscriptions.push(UserEducationStore.addListener(this._onStateChange));
+		UserAttributeActionCreator.selectAttribute(this.props.match.path);
+		UserAttributeActionCreator.getUserEducation();
+	}
     render()
     {
+		let info 		= null;
+		let isLoading 	= false;
+		switch (this.state.dataStatus)
+		{
+			case ApiCallDataStatusEnums.LOADING:
+				isLoading = true;
+				break;
+			case ApiCallDataStatusEnums.SUCCESS:
+				isLoading 	= false;
+				info		= <span>{JSON.stringify(this.state.userEducation)}</span>;
+				break;
+			case ApiCallDataStatusEnums.FAIL:
+				isLoading 	= false;
+				info		= <div>Failed</div>;
+				break;
+			default:
+				break;
+		}
+
         return  <div className="education">
-                    this is education
+					<HamisorSiteLoader isLoading={isLoading}/>
+					{info}
                 </div>;
     }
+	componentWillUnmount()
+	{
+		this.subscriptions.map(item_subscription => {item_subscription.remove()});
+	}
+	// Private
+	_onStateChange()
+	{
+		this.setState(this._getStateFromStore());
+	}
+	_getStateFromStore()
+	{
+		return {
+			dataStatus:		UserEducationStore.getApiStatus(),
+			userEducation:	UserEducationStore.getUserEducation()
+		};
+	}
 }
 
 export default Education

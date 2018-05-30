@@ -1,9 +1,10 @@
-import HamisorSiteAppDispatcher from "../../HamisorSiteAppDispatcher";
-import { Store }                from "flux/utils";
-import Utilities 				from "../../../common/Utilities";
-import ApiCallDataStatusEnums	from "../../../common/enums/ApiCallDataStatusEnums";
-import ApiRoutineEnums			from "../../enums/ApiRoutineEnums";
-import HamisorSiteApiHelper		from "../../HamisorSiteApiHelper";
+import HamisorSiteAppDispatcher 	from "../../HamisorSiteAppDispatcher";
+import { Store }                	from "flux/utils";
+import Utilities 					from "../../../common/Utilities";
+import ApiCallDataStatusEnums		from "../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../enums/ApiRoutineEnums";
+import UserAttributeActionCreator 	from "../../actions/UserAttributeActionCreator";
+import HamisorSiteApiHelper			from "../../HamisorSiteApiHelper";
 
 class UserProjectsStore extends Store
 {
@@ -15,7 +16,7 @@ class UserProjectsStore extends Store
 		this.userProjects		= {};
 	}
 	// Public
-	getLoadStatus()
+	getApiStatus()
 	{
 		return this.loadingStatus;
 	}
@@ -31,6 +32,9 @@ class UserProjectsStore extends Store
 			case ApiRoutineEnums.GET_USER_PROJECTS:
 				if(Utilities.isEmpty(this.userProjects))
 					this._getUserProjects();
+				this.__emitChange();
+				break;
+			case ApiRoutineEnums.ON_GET_USER_PROJECTS:
 				this.__emitChange();
 				break;
 			default:
@@ -61,7 +65,7 @@ class UserProjectsStore extends Store
 			this._setUserProjects(data);
 		}
 
-		this.__emitChange();
+		UserAttributeActionCreator.onGetUserProjects();
 	}
 }
 

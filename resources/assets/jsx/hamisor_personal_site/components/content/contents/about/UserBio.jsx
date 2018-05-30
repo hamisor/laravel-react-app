@@ -58,7 +58,7 @@ class UserBio extends React.Component
 	_getStateFromStore()
 	{
 		return {
-			dataStatus:	UserBioStore.getLoadStatus(),
+			dataStatus:	UserBioStore.getApiStatus(),
 			userBio: 	UserBioStore.getUserBio()
 		};
 	}

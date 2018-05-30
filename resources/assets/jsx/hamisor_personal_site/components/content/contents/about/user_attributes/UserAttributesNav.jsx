@@ -10,14 +10,14 @@ class UserAttributesNav extends React.Component
     constructor()
     {
         super();
-        this.state                                  = this._getStateFromStore();
-        this.userAttributeOptionStoreSubscription   = null;
-        this._onStateChange                         = this._onStateChange.bind(this);
-        this._onUserAttributeClick                  = this._onUserAttributeClick.bind(this);
+		this.subscriptions 	       = [];
+		this.state                 = this._getStateFromStore();
+        this._onStateChange        = this._onStateChange.bind(this);
+        this._onUserAttributeClick = this._onUserAttributeClick.bind(this);
     }
     componentDidMount()
     {
-        this.userAttributeOptionStoreSubscription = UserAttributeOptionStore.addListener(this._onStateChange);
+		this.subscriptions.push(UserAttributeOptionStore.addListener(this._onStateChange));
     }
     render()
     {
@@ -41,7 +41,7 @@ class UserAttributesNav extends React.Component
     }
     componentWillUnmount()
     {
-        this.userAttributeOptionStoreSubscription.remove();
+		this.subscriptions.map(item_subscription => {item_subscription.remove()});
     }
     // Private
     _onStateChange()

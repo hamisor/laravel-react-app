@@ -16,7 +16,7 @@ class UserBioStore extends Store
 		this.userBio		= {};
 	}
 	// Public
-	getLoadStatus()
+	getApiStatus()
 	{
 		return this.loadingStatus;
 	}
