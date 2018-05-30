@@ -1,12 +1,12 @@
 import React            			from "react";
-import UserAttributeActionCreator	from "../../../../actions/UserAttributeActionCreator";
-import ApiCallDataStatusEnums		from "../../../../../common/enums/ApiCallDataStatusEnums";
-import ApiRoutineEnums				from "../../../../enums/ApiRoutineEnums";
-import ApiRoutineNameMap			from "../../../../maps/ApiRoutineNameMap";
-import UserBioStore					from "../../../../stores/user/UserBioStore";
-import HamisorSiteLoader			from "../../../../../common/components/HamisorSiteLoader";
-import HamisorSiteApiError			from "../../../../../common/components/HamisorSiteApiError";
-import UserBioDetail				from "./user_bio/UserBioDetail";
+import UserAttributeActionCreator	from "../../../../../actions/UserAttributeActionCreator";
+import ApiCallDataStatusEnums		from "../../../../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../../../../enums/ApiRoutineEnums";
+import ApiRoutineNameMap			from "../../../../../maps/ApiRoutineNameMap";
+import UserBioStore					from "../../../../../stores/user/UserBioStore";
+import HamisorSiteLoader			from "../../../../../../common/components/HamisorSiteLoader";
+import HamisorSiteApiError			from "../../../../../../common/components/HamisorSiteApiError";
+import UserBioDetail				from "./UserBioDetail";
 
 class UserBio extends React.Component
 {

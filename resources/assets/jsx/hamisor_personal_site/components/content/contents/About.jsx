@@ -1,7 +1,7 @@
 import React 				from "react";
 import MenuActionCreator 	from "../../../actions/MenuActionCreator";
-import UserAttributes		from "./about/UserAttributes";
-import UserBio				from "./about/UserBio";
+import UserAttributes		from "./about/user_attributes/UserAttributes";
+import UserBio				from "./about/user_bio/UserBio";
 
 class About extends React.Component
 {

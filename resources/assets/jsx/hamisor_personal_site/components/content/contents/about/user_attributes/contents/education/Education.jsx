@@ -1,11 +1,13 @@
 import React                        from "react";
-import ApiCallDataStatusEnums 		from "../../../../../../../common/enums/ApiCallDataStatusEnums";
-import ApiRoutineEnums				from "../../../../../../enums/ApiRoutineEnums";
-import ApiRoutineNameMap			from "../../../../../../maps/ApiRoutineNameMap";
-import UserAttributeActionCreator   from "../../../../../../actions/UserAttributeActionCreator";
-import UserEducationStore           from "../../../../../../stores/user/UserEducationStore";
-import HamisorSiteLoader			from "../../../../../../../common/components/HamisorSiteLoader";
-import HamisorSiteApiError			from "../../../../../../../common/components/HamisorSiteApiError";
+import Uuid							from 'uuid';
+import ApiCallDataStatusEnums 		from "../../../../../../../../common/enums/ApiCallDataStatusEnums";
+import ApiRoutineEnums				from "../../../../../../../enums/ApiRoutineEnums";
+import ApiRoutineNameMap			from "../../../../../../../maps/ApiRoutineNameMap";
+import UserAttributeActionCreator   from "../../../../../../../actions/UserAttributeActionCreator";
+import UserEducationStore           from "../../../../../../../stores/user/UserEducationStore";
+import HamisorSiteLoader			from "../../../../../../../../common/components/HamisorSiteLoader";
+import HamisorSiteApiError			from "../../../../../../../../common/components/HamisorSiteApiError";
+import EducationDetail				from "./EducationDetail";
 
 class Education extends React.Component
 {
@@ -33,7 +35,12 @@ class Education extends React.Component
 				break;
 			case ApiCallDataStatusEnums.SUCCESS:
 				isLoading 	= false;
-				info		= <span>{JSON.stringify(this.state.userEducation)}</span>;
+				info		= this.state.userEducation.map(item_educationInfo =>
+					<EducationDetail key={Uuid()}
+									 institutionName={item_educationInfo.institution_name}
+									 imgUrl={item_educationInfo.img}
+									 location={item_educationInfo.location}
+									 additionalInfo={item_educationInfo.additional_info}/>);
 				break;
 			case ApiCallDataStatusEnums.FAIL:
 				isLoading 	= false;

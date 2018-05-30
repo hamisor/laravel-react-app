@@ -2,7 +2,7 @@ import React                from "react";
 import { Switch, Route } 	from "react-router-dom";
 import RouteMap             from "../../../../../maps/RouteMap";
 import RouteEnums           from "../../../../../enums/RouteEnums";
-import Education            from "./contents/Education";
+import Education            from "./contents/education/Education";
 import Skills               from "./contents/UserSkills";
 import WorkExperience       from "./contents/WorkExperience";
 
