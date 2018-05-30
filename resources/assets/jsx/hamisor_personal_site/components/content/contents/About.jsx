@@ -13,7 +13,6 @@ class About extends React.Component
 	{
 		return(
 			<div className="about">
-				This is About Me
 				<div className="row">
 					<UserBio/>
                     <UserAttributes/>

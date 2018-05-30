@@ -10394,6 +10394,14 @@ a.text-dark:focus {
   /* Position and sizing of burger button */
 }
 
+#reactApp #appContainer a {
+  color: black;
+}
+
+#reactApp #appContainer a:hover {
+  color: black;
+}
+
 #reactApp #appContainer .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -10468,6 +10476,7 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer {
   height: 100%;
+  padding-top: 30px;
   overflow: hidden;
 }
 
@@ -10478,5 +10487,43 @@ a.text-dark:focus {
 #reactApp #appContainer #pageContainer .content {
   height: calc(100% - 80px);
   overflow: scroll;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol {
+  margin-bottom: 40px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol img {
+  max-height: 300px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol h4 {
+  padding-left: 15px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol img {
+  height: 30px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol img:hover {
+  opacity: 0.4;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail {
+  margin: 40px 0;
+}
+
+@media (min-width: 768px) {
+  #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail .row .institutionNameCol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 

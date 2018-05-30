@@ -1,0 +1,19 @@
+.education
+{
+  .educationDetail
+  {
+    margin: 40px 0;
+    .row
+    {
+      @include media-breakpoint-up(md)
+      {
+        .institutionNameCol
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

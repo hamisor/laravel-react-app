@@ -2,4 +2,6 @@
 {
   @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
   overflow: scroll;
+
+  @import "content/contents/about";
 }

@@ -90443,7 +90443,6 @@ var About = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "about" },
-				"This is About Me",
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
 					{ className: "row" },
@@ -90670,7 +90669,7 @@ var UserAttributesContent = function (_React$Component) {
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "userAttributesContent" },
+                { className: "userAttributesContent container-fluid" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["d" /* Switch */],
                     null,
@@ -96033,12 +96032,12 @@ var EducationDetail = function (_React$Component) {
 					{ className: "row" },
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-12 col-md-5" },
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: this.props.imgUrl, style: { width: 280 } })
+						{ className: "col-12 col-md-3" },
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "mx-auto d-block img-fluid", src: this.props.imgUrl })
 					),
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-12 col-md-7" },
+						{ className: "institutionNameCol col-12 col-md-9" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							"h4",
 							null,
@@ -96047,7 +96046,7 @@ var EducationDetail = function (_React$Component) {
 					)
 				),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					"h6",
+					"h5",
 					null,
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"i",
@@ -97311,12 +97310,12 @@ var UserBioDetail = function (_React$Component) {
 				{ className: "userBioDetail row" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
-					{ className: "userProfileImgCol col-3 col-sm-12" },
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: this.props.imgUrl, style: { height: 200 } })
+					{ className: "userProfileImgCol col-5 col-sm-12" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "mx-auto d-block img-fluid", src: this.props.imgUrl })
 				),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
-					{ className: "userBioInfoCol col-9 col-sm-12" },
+					{ className: "userBioInfoCol col-7 col-sm-12" },
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"h4",
 						null,
@@ -97331,7 +97330,7 @@ var UserBioDetail = function (_React$Component) {
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
 								{ className: "nav-link", href: "mailto:" + this.props.email },
-								"Email"
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/email_logo.svg" })
 							)
 						),
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -97340,7 +97339,7 @@ var UserBioDetail = function (_React$Component) {
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
 								{ className: "nav-link", href: this.props.gitHubUrl, target: "_blank" },
-								"Github"
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/github_logo.svg" })
 							)
 						),
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -97349,7 +97348,7 @@ var UserBioDetail = function (_React$Component) {
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
 								{ className: "nav-link", href: this.props.facebookUrl, target: "_blank" },
-								"Facebook"
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/facebook_logo.svg" })
 							)
 						),
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -97358,7 +97357,7 @@ var UserBioDetail = function (_React$Component) {
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"a",
 								{ className: "nav-link", href: this.props.linkedinUrl, target: "_blank" },
-								"Linkedin"
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/linkedin_logo.svg" })
 							)
 						)
 					)

@@ -10,7 +10,7 @@ class UserAttributesContent extends React.Component
 {
     render()
     {
-        return  <div className="userAttributesContent">
+        return  <div className="userAttributesContent container-fluid">
                     <Switch>
                         <Route exact path={RouteMap[RouteEnums.ABOUT_ME_EDUCATION]}         component={Education}/>
                         <Route exact path={RouteMap[RouteEnums.ABOUT_ME_SKILLS]}            component={Skills}/>

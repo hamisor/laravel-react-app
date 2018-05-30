@@ -6,23 +6,31 @@ class UserBioDetail extends React.Component
 	render()
 	{
 		return  <div className="userBioDetail row">
-					<div className="userProfileImgCol col-3 col-sm-12">
-						<img src={this.props.imgUrl} style={{height: 200}}/>
+					<div className="userProfileImgCol col-5 col-sm-12">
+						<img className="mx-auto d-block img-fluid" src={this.props.imgUrl}/>
 					</div>
-					<div className="userBioInfoCol col-9 col-sm-12">
+					<div className="userBioInfoCol col-7 col-sm-12">
 						<h4>{`${this.props.firstName} ${this.props.lastName}`}</h4>
 						<ul className="nav">
 							<li className="nav-item">
-								<a className="nav-link" href={`mailto:${this.props.email}`}>Email</a>
+								<a className="nav-link" href={`mailto:${this.props.email}`}>
+									<img src="/assets/images/profile/email_logo.svg"/>
+								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.gitHubUrl} target="_blank">Github</a>
+								<a className="nav-link" href={this.props.gitHubUrl} target="_blank">
+                                    <img src="/assets/images/profile/github_logo.svg"/>
+								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.facebookUrl} target="_blank">Facebook</a>
+								<a className="nav-link" href={this.props.facebookUrl} target="_blank">
+                                    <img src="/assets/images/profile/facebook_logo.svg"/>
+								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href={this.props.linkedinUrl} target="_blank">Linkedin</a>
+								<a className="nav-link" href={this.props.linkedinUrl} target="_blank">
+                                    <img src="/assets/images/profile/linkedin_logo.svg"/>
+								</a>
 							</li>
 						</ul>
 					</div>

@@ -10,16 +10,30 @@
   #appContainer
   {
     height: 100vh;
-    @import "components/burgerMenu";
+
+    // Global bootstrap override
+    a
+    {
+      color: black;
+      &:hover
+      {
+        color: black;
+      }
+    }
+
+    ////////////////////////////////////
+
+    @import "components/menu/burgerMenu";
     #pageContainer
     {
-      // VARIABLES
+      // Shared variables
       $pageContainerHeight: 100%;
       $headerMenuHeight:    80px;
 
       height: $pageContainerHeight;
+      padding-top: 30px;
       overflow: hidden;
-      @import "components/headerMenu";
+      @import "components/menu/headerMenu";
       @import "components/content";
     }
   }

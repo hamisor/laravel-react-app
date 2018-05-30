@@ -7,14 +7,14 @@ class EducationDetail extends React.Component
 	{
 		return  <div className="educationDetail">
 					<div className="row">
-						<div className="col-12 col-md-5">
-							<img src={this.props.imgUrl} style={{width: 280}}/>
+						<div className="col-12 col-md-3">
+							<img className="mx-auto d-block img-fluid" src={this.props.imgUrl}/>
 						</div>
-						<div className="col-12 col-md-7">
+						<div className="institutionNameCol col-12 col-md-9">
 							<h4>{this.props.institutionName}</h4>
 						</div>
 					</div>
-					<h6><i>{this.props.location}</i></h6>
+					<h5><i>{this.props.location}</i></h5>
 					<p>{this.props.additionalInfo}</p>
 				</div>;
 	}
