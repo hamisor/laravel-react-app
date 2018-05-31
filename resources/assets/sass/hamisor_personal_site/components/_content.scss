@@ -1,7 +1,8 @@
 .content
 {
   @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 30px 15px;
 
