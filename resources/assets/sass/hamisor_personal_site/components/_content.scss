@@ -3,7 +3,7 @@
   @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
-  padding-top: 30px;
+  padding: 30px 15px;
 
   @import "content/contents/about";
 }

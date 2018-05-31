@@ -7,9 +7,9 @@ class SkillDetail extends React.Component
 	render()
 	{
 		return  <div className="skillDetail">
-					<h4>{this.props.skillName}</h4>
+					<h3>{this.props.skillName}</h3>
 					{
-						this.props.skillDetails.map(item_skill => <img key={Uuid()} src={item_skill.logo} style={{width: 80}}/> )
+						this.props.skillDetails.map(item_skill => <img className="img-fluid" key={Uuid()} src={item_skill.logo}/> )
 					}
 				</div>;
 	}
