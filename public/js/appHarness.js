@@ -96400,7 +96400,7 @@ var SkillDetail = function (_React$Component) {
 				"div",
 				{ className: "skillDetail" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					"h3",
+					"h4",
 					null,
 					this.props.skillName
 				),
@@ -96696,12 +96696,12 @@ var WorkExperienceDetail = function (_React$Component) {
 					{ className: "row" },
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-12 col-md-5" },
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: this.props.logoUrl, style: { width: 150 } })
+						{ className: "col-12 col-md-3" },
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "mx-auto d-block img-fluid", src: this.props.logoUrl })
 					),
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-12 col-md-7" },
+						{ className: "companyNameCol col-12 col-md-9" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							"h4",
 							null,
@@ -96716,7 +96716,7 @@ var WorkExperienceDetail = function (_React$Component) {
 						"div",
 						{ className: "col-5" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"h6",
+							"h5",
 							null,
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 								"i",
@@ -96729,7 +96729,7 @@ var WorkExperienceDetail = function (_React$Component) {
 						"div",
 						{ className: "col-7" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"h6",
+							"h5",
 							null,
 							__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.startDate).format("MMM YYYY") + " - " + (__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate) > __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()() ? "Present" : __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate).format("MMM YYYY"))
 						)

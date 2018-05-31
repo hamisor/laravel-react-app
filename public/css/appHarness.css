@@ -10512,7 +10512,11 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail {
-  padding: 20px 0;
+  margin: 40px 0;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail .row .col-12 {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -10529,6 +10533,10 @@ a.text-dark:focus {
   }
 }
 
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail h5 {
+  margin-bottom: 15px;
+}
+
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail {
   margin: 40px 0;
 }
@@ -10536,5 +10544,43 @@ a.text-dark:focus {
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail img {
   height: 80px;
   margin: 20px 40px 20px 0;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail {
+  margin: 40px 0;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail .row .col-12 {
+  margin-bottom: 20px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail .row .col-12 img {
+  max-height: 150px;
+}
+
+@media (min-width: 768px) {
+  #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail .row .companyNameCol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail h5 {
+  margin-bottom: 15px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail ul {
+  padding-left: 15px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail ul li {
+  margin-bottom: 15px;
 }
 

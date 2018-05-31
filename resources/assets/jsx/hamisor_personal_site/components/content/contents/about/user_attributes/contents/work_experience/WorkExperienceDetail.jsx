@@ -9,23 +9,23 @@ class WorkExperienceDetail extends React.Component
 	{
 		return  <div className="workExperienceDetail">
 					<div className="row">
-						<div className="col-12 col-md-5">
-							<img src={this.props.logoUrl} style={{width: 150}}/>
+						<div className="col-12 col-md-3">
+							<img className="mx-auto d-block img-fluid" src={this.props.logoUrl}/>
 						</div>
-						<div className="col-12 col-md-7">
+						<div className="companyNameCol col-12 col-md-9">
 							<h4>{this.props.companyName}</h4>
 						</div>
 					</div>
 					<div className="row">
 						<div className="col-5">
-							<h6><i>{this.props.location}</i></h6>
+							<h5><i>{this.props.location}</i></h5>
 						</div>
 						<div className="col-7">
-							<h6>{
+							<h5>{
 									`${Moment(this.props.startDate).format("MMM YYYY")} - ${
 									(Moment(this.props.finishDate) > Moment()) ? "Present" : Moment(this.props.finishDate).format("MMM YYYY")}`
 								}
-							</h6>
+							</h5>
 						</div>
 					</div>
 					<ul>
