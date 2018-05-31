@@ -90243,7 +90243,7 @@ var HeaderMenu = function (_React$Component) {
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "nav",
-                { className: "navbar navbar-expand-sm stick-top navbar-light bg-light" },
+                { className: "navbar navbar-expand-sm sticky-top navbar-light bg-light" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "span",
                     { className: "navbar-brand d-none d-sm-block" },
