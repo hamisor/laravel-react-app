@@ -17,14 +17,17 @@ class WorkExperienceDetail extends React.Component
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-5">
+						<div className="col-3">
 							<h5><i>{this.props.location}</i></h5>
 						</div>
-						<div className="col-7">
-							<h5>{
-									`${Moment(this.props.startDate).format("MMM YYYY")} - ${
-									(Moment(this.props.finishDate) > Moment()) ? "Present" : Moment(this.props.finishDate).format("MMM YYYY")}`
-								}
+						<div className="dateCol col-9">
+							<h5>
+								<i>
+                                    {
+                                        `${Moment(this.props.startDate).format("MMM YYYY")} - ${
+                                            (Moment(this.props.finishDate) > Moment()) ? "Present" : Moment(this.props.finishDate).format("MMM YYYY")}`
+                                    }
+								</i>
 							</h5>
 						</div>
 					</div>

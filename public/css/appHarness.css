@@ -10572,6 +10572,10 @@ a.text-dark:focus {
   }
 }
 
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail .row .dateCol h5 {
+  text-align: center;
+}
+
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail h5 {
   margin-bottom: 15px;
 }

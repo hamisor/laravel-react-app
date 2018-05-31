@@ -96714,7 +96714,7 @@ var WorkExperienceDetail = function (_React$Component) {
 					{ className: "row" },
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-5" },
+						{ className: "col-3" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							"h5",
 							null,
@@ -96727,11 +96727,15 @@ var WorkExperienceDetail = function (_React$Component) {
 					),
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"div",
-						{ className: "col-7" },
+						{ className: "dateCol col-9" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							"h5",
 							null,
-							__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.startDate).format("MMM YYYY") + " - " + (__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate) > __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()() ? "Present" : __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate).format("MMM YYYY"))
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								"i",
+								null,
+								__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.startDate).format("MMM YYYY") + " - " + (__WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate) > __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()() ? "Present" : __WEBPACK_IMPORTED_MODULE_2_moment_moment___default()(this.props.finishDate).format("MMM YYYY"))
+							)
 						)
 					)
 				),
