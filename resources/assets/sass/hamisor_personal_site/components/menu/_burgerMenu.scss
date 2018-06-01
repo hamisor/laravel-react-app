@@ -14,13 +14,13 @@
 
   /* Morph shape necessary with bubble or elastic */
   .bm-morph-shape {
-    fill: $hamisorSiteBurgerMenuBackgroundColor;
+    fill: $hamisorSiteBurgerMenuBgColor;
   }
 
   /* General sidebar styles */
   .bm-menu
   {
-    background: $hamisorSiteBurgerMenuBackgroundColor;
+    background: $hamisorSiteBurgerMenuBgColor;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 
@@ -29,20 +29,14 @@
     {
       color: $hamisorSiteBurgerMenuListFontColor;
       padding: 0.8em;
-      li {
-        list-style: none;
-        padding: 0;
-        a{
-          font-size: $hamisorSiteFontDeskTiny;
-          color: $hamisorSiteBurgerMenuListFontColor;
-        }
-      }
-      li.active
+
+      // Default navbar nav-item width overrides
+      .navbar-nav
       {
-        a{
-          font-size: $hamisorSiteFontDeskTiny;
-          color: $hamisorSiteBurgerMenuListFontColor;
-          font-weight: bold;
+        .nav-item
+        {
+          width: 200px;
+          margin-bottom: 15px;
         }
       }
     }
@@ -65,7 +59,7 @@
 .bm-burger-button
 {
   z-index: 1500 !important;
-  position: fixed;
+  position: absolute;
   width: 20px;
   height: 20px;
   left:40px;
@@ -73,8 +67,8 @@
 
   .bm-burger-bars
   {
-    background: black;
-    // OVERRIDE BURGER BAR THICKNESS
+    background: $hamisorSiteBurgerMenuBarColor;
+    // Override burger bar thickness
     height: 15% !important;
   }
 }

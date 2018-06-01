@@ -1,6 +1,7 @@
 // Hamisor site variables
-@import "variables/hamisorSiteColorUsageName";
-@import "variables/hamisorSiteFontSize";
+@import "variables/colors/hamisorSiteColorUsageName";
+@import "variables/fonts/hamisorSiteFontSize";
+@import "variables/fonts/hamisorSiteFontFamily";
 // Hamisor site mixins
 @import "mixins/mixins";
 
@@ -10,8 +11,9 @@
   #appContainer
   {
     height: 100vh;
+    font-family: hamisorSiteFont, sans-serif;
 
-    // Global bootstrap override
+    // Global common style
     a
     {
       color: black;
@@ -21,7 +23,16 @@
       }
     }
 
+    %cellBgCommonStyle
+    {
+      background-color: $hamisorSiteCellBgColor;
+      padding: 20px;
+    }
+
     ////////////////////////////////////
+
+    // This navbar style is shared between burgerMenu and headerMenu
+    @import "components/common/navBar";
 
     @import "components/menu/burgerMenu";
     #pageContainer
@@ -33,7 +44,7 @@
       height: $pageContainerHeight;
       overflow: hidden;
       @import "components/menu/headerMenu";
-      @import "components/content";
+      @import "components/content/content";
     }
   }
 }

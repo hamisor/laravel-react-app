@@ -20,7 +20,7 @@ class HeaderMenu extends React.Component
     }
     render()
     {
-        return  <nav className="navbar navbar-expand-sm stick-top navbar-light bg-light">
+        return  <nav className="navbar navbar-expand-sm sticky-top navbar-light">
                     <span className="navbar-brand d-none d-sm-block">Hamisor</span>
                     <div className="collapse navbar-collapse">
                         <MenuList onNavigationItemClick={this._onNavigationItemClick}

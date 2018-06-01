@@ -1,0 +1,22 @@
+.projects
+{
+  .userProjects
+  {
+    .userProjectDetail
+    {
+      margin-bottom: 40px;
+      @extend %cellBgCommonStyle;
+
+      .viewBtn
+      {
+		@include borderRadius(0);
+		background-color: $hamisorSiteProjectsViewBtnBgColor;
+        color: $hamisorSiteProjectsViewBtnFontColor;
+      }
+      p
+      {
+        margin-top: 15px;
+      }
+    }
+  }
+}

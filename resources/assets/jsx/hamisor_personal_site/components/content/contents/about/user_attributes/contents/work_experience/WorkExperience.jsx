@@ -54,7 +54,7 @@ class WorkExperience extends React.Component
 		}
 
         return  <div className="workExperience">
-                    <HamisorSiteLoader isLoading={isLoading}/>
+                    {isLoading ? <HamisorSiteLoader/> : null}
                     {info}
                 </div>;
     }

@@ -7,25 +7,28 @@ class WorkExperienceDetail extends React.Component
 {
 	render()
 	{
-		return  <div className="workExperienceDetail">
+		return  <div className="workExperienceDetail shadow">
 					<div className="row">
-						<div className="col-12 col-md-5">
-							<img src={this.props.logoUrl} style={{width: 150}}/>
+						<div className="col-12 col-md-3">
+							<img className="mx-auto d-block img-fluid" src={this.props.logoUrl}/>
 						</div>
-						<div className="col-12 col-md-7">
+						<div className="companyNameCol col-12 col-md-9">
 							<h4>{this.props.companyName}</h4>
 						</div>
 					</div>
 					<div className="row">
-						<div className="col-5">
-							<h6><i>{this.props.location}</i></h6>
+						<div className="col-3">
+							<h5><i>{this.props.location}</i></h5>
 						</div>
-						<div className="col-7">
-							<h6>{
-									`${Moment(this.props.startDate).format("MMM YYYY")} - ${
-									(Moment(this.props.finishDate) > Moment()) ? "Present" : Moment(this.props.finishDate).format("MMM YYYY")}`
-								}
-							</h6>
+						<div className="dateCol col-9">
+							<h5>
+								<i>
+                                    {
+                                        `${Moment(this.props.startDate).format("MMM YYYY")} - ${
+                                            (Moment(this.props.finishDate) > Moment()) ? "Present" : Moment(this.props.finishDate).format("MMM YYYY")}`
+                                    }
+								</i>
+							</h5>
 						</div>
 					</div>
 					<ul>

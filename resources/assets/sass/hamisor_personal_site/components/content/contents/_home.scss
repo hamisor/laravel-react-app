@@ -1,0 +1,5 @@
+.jumbotron
+{
+  @extend %cellBgCommonStyle;
+  @include borderRadius(0);
+}

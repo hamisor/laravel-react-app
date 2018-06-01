@@ -1,0 +1,17 @@
+.skills
+{
+  .skillsDetail
+  {
+    .skillDetail
+    {
+      margin: 40px 0;
+      @extend %cellBgCommonStyle;
+
+      img
+      {
+        height: 80px;
+        margin: 20px 40px 20px 0;
+      }
+    }
+  }
+}

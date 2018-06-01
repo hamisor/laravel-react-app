@@ -6,10 +6,10 @@ class SkillDetail extends React.Component
 {
 	render()
 	{
-		return  <div className="skillDetail">
+		return  <div className="skillDetail shadow">
 					<h4>{this.props.skillName}</h4>
 					{
-						this.props.skillDetails.map(item_skill => <img key={Uuid()} src={item_skill.logo} style={{width: 80}}/> )
+						this.props.skillDetails.map(item_skill => <img className="img-fluid" key={Uuid()} src={item_skill.logo}/> )
 					}
 				</div>;
 	}

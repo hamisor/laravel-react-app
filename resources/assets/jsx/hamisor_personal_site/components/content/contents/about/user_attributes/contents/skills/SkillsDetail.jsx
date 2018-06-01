@@ -7,13 +7,13 @@ class SkillsDetail extends React.Component
 	render()
 	{
 		return  <div className="skillsDetail">
-					<SkillDetail skillName={"Computer Software"} 					skillDetails={this.props.computerSoftware}/>
-					<SkillDetail skillName={"Programming Language"} 				skillDetails={this.props.programmingLanguage}/>
-					<SkillDetail skillName={"Database"} 							skillDetails={this.props.database}/>
-					<SkillDetail skillName={"Programming Frameworks / Libraries"} 	skillDetails={this.props.programmingFrameworks}/>
-					<SkillDetail skillName={"Build Tools"} 							skillDetails={this.props.buildTools}/>
-					<SkillDetail skillName={"Server"} 								skillDetails={this.props.server}/>
-					<SkillDetail skillName={"Operating System"} 					skillDetails={this.props.operatingSystem}/>
+					<SkillDetail skillName={"Software"} 				skillDetails={this.props.computerSoftware}/>
+					<SkillDetail skillName={"Languages"} 				skillDetails={this.props.programmingLanguage}/>
+					<SkillDetail skillName={"Databases"}				skillDetails={this.props.database}/>
+					<SkillDetail skillName={"Frameworks / Libraries"} 	skillDetails={this.props.programmingFrameworks}/>
+					<SkillDetail skillName={"Build Tools"} 				skillDetails={this.props.buildTools}/>
+					<SkillDetail skillName={"Server"} 					skillDetails={this.props.server}/>
+					<SkillDetail skillName={"Operating System"} 		skillDetails={this.props.operatingSystem}/>
 				</div>;
 	}
 }

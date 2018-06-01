@@ -11,7 +11,15 @@ class Home extends React.Component
 	{
 		return(
 			<div className="home">
-				Welcome to hamisor site home
+				<div className="jumbotron shadow">
+					<h1 className="display-4">Hello, my name is Lu Han!</h1>
+					<p className="lead">
+						I am a polyglot full-stack software developer.
+					</p>
+					<p className="lead">
+						I am passionate about building software that is scalable, reliable and resilient.
+					</p>
+				</div>
 			</div>
 		);
 	}

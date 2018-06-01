@@ -1,0 +1,48 @@
+.workExperience
+{
+  .workExperienceDetail
+  {
+    margin: 40px 0;
+    @extend %cellBgCommonStyle;
+
+    .row
+    {
+      .col-12
+      {
+        margin-bottom: 20px;
+        img
+        {
+          max-height: 150px;
+        }
+      }
+      @include media-breakpoint-up(md)
+      {
+        .companyNameCol
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .dateCol
+      {
+        h5
+        {
+          text-align: center;
+        }
+      }
+    }
+    h5
+    {
+      margin-bottom: 15px;
+    }
+    ul
+    {
+      padding-left: 15px;
+      li
+      {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

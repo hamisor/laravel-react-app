@@ -1,5 +1,6 @@
-import React 				from "react";
-import MenuActionCreator 	from "../../../actions/MenuActionCreator";
+import React 					from "react";
+import MenuActionCreator 		from "../../../actions/MenuActionCreator";
+import HamisorSiteConstruction	from "../../../../common/components/HamisorSiteConstruction";
 
 class Contact extends React.Component
 {
@@ -11,7 +12,7 @@ class Contact extends React.Component
 	{
 		return(
 			<div className="contact">
-				This is Contact me page
+				<HamisorSiteConstruction/>
 			</div>
 		);
 	}

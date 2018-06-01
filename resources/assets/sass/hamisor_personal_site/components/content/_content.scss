@@ -1,0 +1,14 @@
+.content
+{
+  @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 30px 15px;
+  background-color: $hamisorSiteContentBgColor;
+
+  @import "../common/hamisorSiteLoader";
+  @import "contents/home";
+  @import "contents/about";
+  @import "contents/projects";
+}

@@ -1,0 +1,24 @@
+.navbar-nav
+{
+  height: inherit;
+  .nav-item
+  {
+	width: 120px;
+	.nav-link
+	{
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  color: $hamisorSiteHeaderMenuFontColor;
+	}
+	&:hover
+	{
+	  background-color: $hamisorSiteHeaderMenuHoverColor;
+	}
+	&.active
+	{
+	  background-color: $hamisorSiteHeaderMenuActiveColor;
+	}
+  }
+}

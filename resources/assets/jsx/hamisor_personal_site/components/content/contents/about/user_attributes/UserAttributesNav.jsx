@@ -35,7 +35,7 @@ class UserAttributesNav extends React.Component
                     <li className="nav-item">
                         <Link className={`nav-link ${this.state.currentAttributeOption === RouteEnums.ABOUT_ME_WORK_EXPERIENCE ? "active": ""}`}
                               to={RouteMap[RouteEnums.ABOUT_ME_WORK_EXPERIENCE]}
-                              onClick={this._onUserAttributeClick}>Work Experience</Link>
+                              onClick={this._onUserAttributeClick}>Work</Link>
                     </li>
                 </ul>;
     }

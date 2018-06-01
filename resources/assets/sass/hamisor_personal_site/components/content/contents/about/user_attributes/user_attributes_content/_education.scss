@@ -2,9 +2,15 @@
 {
   .educationDetail
   {
-    padding: 20px 0;
+    margin: 40px 0;
+    @extend %cellBgCommonStyle;
+
     .row
     {
+      .col-12
+      {
+        margin-bottom: 10px;
+      }
       @include media-breakpoint-up(md)
       {
         .institutionNameCol
@@ -14,6 +20,10 @@
           align-items: center;
         }
       }
+    }
+    h5
+    {
+      margin-bottom: 15px;
     }
   }
 }

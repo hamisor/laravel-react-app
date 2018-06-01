@@ -1,9 +1,0 @@
-.content
-{
-  @include calc-sub('height', $pageContainerHeight, $headerMenuHeight);
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 30px;
-
-  @import "content/contents/about";
-}

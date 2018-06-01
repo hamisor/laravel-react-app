@@ -1,25 +1,16 @@
-import React 			from "react";
-import { RingLoader } 	from "react-spinners";
-import PropTypes 		from "prop-types";
+import React 				from "react";
+import { PropagateLoader } 	from "react-spinners";
 
-const LOADER_COLOUR = "#18FFFF";
+const LOADER_COLOUR = "#adadad";
 
 class HamisorSiteLoader extends React.Component
 {
 	render()
 	{
 		return  <div className="hamisorSiteLoader">
-					<RingLoader
-						color={LOADER_COLOUR}
-						loading={this.props.isLoading}
-					/>
+					<PropagateLoader color={LOADER_COLOUR}/>
 				</div>;
 	}
 }
-
-HamisorSiteLoader.propTypes =
-{
-	isLoading:  PropTypes.bool.isRequired,
-};
 
 export default HamisorSiteLoader

@@ -1,4 +1,14 @@
 .navbar
 {
   height: $headerMenuHeight;
+  background-color: $hamisorSiteHeaderMenuBgColor;
+  padding: 0 15px;
+  .navbar-brand
+  {
+    color: $hamisorSiteHeaderMenuFontColor;
+  }
+  .navbar-collapse
+  {
+    height: 100%;
+  }
 }
