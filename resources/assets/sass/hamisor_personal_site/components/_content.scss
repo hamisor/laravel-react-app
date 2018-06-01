@@ -5,6 +5,7 @@
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 30px 15px;
+  background-color: $hamisorSiteContentBgColor;
 
   @import "content/contents/about";
   @import "content/contents/projects";

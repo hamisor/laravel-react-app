@@ -7,7 +7,7 @@ class WorkExperienceDetail extends React.Component
 {
 	render()
 	{
-		return  <div className="workExperienceDetail">
+		return  <div className="workExperienceDetail shadow">
 					<div className="row">
 						<div className="col-12 col-md-3">
 							<img className="mx-auto d-block img-fluid" src={this.props.logoUrl}/>

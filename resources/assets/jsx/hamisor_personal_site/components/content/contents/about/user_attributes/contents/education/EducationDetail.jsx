@@ -5,7 +5,7 @@ class EducationDetail extends React.Component
 {
 	render()
 	{
-		return  <div className="educationDetail">
+		return  <div className="educationDetail shadow">
 					<div className="row">
 						<div className="col-12 col-md-3">
 							<img className="mx-auto d-block img-fluid" src={this.props.imgUrl}/>

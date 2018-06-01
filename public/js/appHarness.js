@@ -96026,7 +96026,7 @@ var EducationDetail = function (_React$Component) {
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
-				{ className: "educationDetail" },
+				{ className: "educationDetail shadow" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
 					{ className: "row" },
@@ -96398,7 +96398,7 @@ var SkillDetail = function (_React$Component) {
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
-				{ className: "skillDetail" },
+				{ className: "skillDetail shadow" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"h4",
 					null,
@@ -96690,7 +96690,7 @@ var WorkExperienceDetail = function (_React$Component) {
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
-				{ className: "workExperienceDetail" },
+				{ className: "workExperienceDetail shadow" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
 					{ className: "row" },
@@ -97311,7 +97311,7 @@ var UserBioDetail = function (_React$Component) {
 		value: function render() {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
-				{ className: "userBioDetail row" },
+				{ className: "userBioDetail row shadow m-0" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
 					{ className: "userProfileImgCol col-5 col-sm-12" },
@@ -97326,42 +97326,46 @@ var UserBioDetail = function (_React$Component) {
 						this.props.firstName + " " + this.props.lastName
 					),
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-						"ul",
-						{ className: "nav" },
+						"div",
+						{ className: "userBioLinks" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"li",
-							{ className: "nav-item" },
+							"ul",
+							{ className: "nav" },
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"a",
-								{ className: "nav-link", href: "mailto:" + this.props.email },
-								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/email_logo.svg" })
-							)
-						),
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"li",
-							{ className: "nav-item" },
+								"li",
+								{ className: "nav-item" },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+									"a",
+									{ className: "nav-link", href: "mailto:" + this.props.email },
+									__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/email_logo.svg" })
+								)
+							),
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"a",
-								{ className: "nav-link", href: this.props.gitHubUrl, target: "_blank" },
-								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/github_logo.svg" })
-							)
-						),
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"li",
-							{ className: "nav-item" },
+								"li",
+								{ className: "nav-item" },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+									"a",
+									{ className: "nav-link", href: this.props.gitHubUrl, target: "_blank" },
+									__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/github_logo.svg" })
+								)
+							),
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"a",
-								{ className: "nav-link", href: this.props.facebookUrl, target: "_blank" },
-								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/facebook_logo.svg" })
-							)
-						),
-						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"li",
-							{ className: "nav-item" },
+								"li",
+								{ className: "nav-item" },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+									"a",
+									{ className: "nav-link", href: this.props.facebookUrl, target: "_blank" },
+									__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/facebook_logo.svg" })
+								)
+							),
 							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-								"a",
-								{ className: "nav-link", href: this.props.linkedinUrl, target: "_blank" },
-								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/linkedin_logo.svg" })
+								"li",
+								{ className: "nav-item" },
+								__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+									"a",
+									{ className: "nav-link", href: this.props.linkedinUrl, target: "_blank" },
+									__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: "/assets/images/profile/linkedin_logo.svg" })
+								)
 							)
 						)
 					)
@@ -97748,7 +97752,7 @@ var UserProjectDetail = function (_React$Component) {
         value: function render() {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "userProjectDetail" },
+                { className: "userProjectDetail shadow" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "h4",
                     null,

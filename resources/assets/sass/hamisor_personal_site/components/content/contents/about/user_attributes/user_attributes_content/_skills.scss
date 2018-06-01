@@ -5,6 +5,8 @@
     .skillDetail
     {
       margin: 40px 0;
+      @extend %cellBgCommonStyle;
+
       img
       {
         height: 80px;

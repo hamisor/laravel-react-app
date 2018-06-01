@@ -21,6 +21,12 @@
       }
     }
 
+    %cellBgCommonStyle
+    {
+      background-color: $hamisorSiteWhite;
+      padding: 20px;
+    }
+
     ////////////////////////////////////
 
     @import "components/menu/burgerMenu";

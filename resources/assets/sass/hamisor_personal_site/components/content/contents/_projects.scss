@@ -5,7 +5,8 @@
     .userProjectDetail
     {
       margin: 40px 0;
-      padding: 0 15px;
+      @extend %cellBgCommonStyle;
+
       .viewBtn
       {
 		@include borderRadius(0);

@@ -3,6 +3,8 @@
   .workExperienceDetail
   {
     margin: 40px 0;
+    @extend %cellBgCommonStyle;
+
     .row
     {
       .col-12

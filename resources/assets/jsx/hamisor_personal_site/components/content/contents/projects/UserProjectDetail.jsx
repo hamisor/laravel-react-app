@@ -6,7 +6,7 @@ class UserProjectDetail extends React.Component
 {
     render()
     {
-        return  <div className="userProjectDetail">
+        return  <div className="userProjectDetail shadow">
                     <h4>{this.props.projectTitle}</h4>
                     <p>{this.props.projectDescription}</p>
                     <h6>Tech Keywords:</h6>

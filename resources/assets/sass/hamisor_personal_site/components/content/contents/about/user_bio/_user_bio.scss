@@ -1,10 +1,15 @@
 .userBio
 {
+  margin-bottom: 40px;
   .userBioDetail
   {
+    @extend %cellBgCommonStyle;
     .userProfileImgCol
     {
-      margin-bottom: 40px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img
       {
         max-height: 300px;
@@ -12,16 +17,23 @@
     }
     .userBioInfoCol
     {
-      h4
+      padding: 10px;
+      .userBioLinks
       {
-        padding-left: 15px;
-      }
-      img
-      {
-        height: 30px;
-        &:hover
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .nav-link
         {
-          opacity: 0.4;
+          padding: 0 15px 20px 0;
+          img
+          {
+            height: 25px;
+            &:hover
+            {
+              opacity: 0.4;
+            }
+          }
         }
       }
     }

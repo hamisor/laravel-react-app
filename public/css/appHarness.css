@@ -10402,6 +10402,15 @@ a.text-dark:focus {
   color: black;
 }
 
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail,
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail,
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail,
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail,
+#reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
 #reactApp #appContainer .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -10419,11 +10428,11 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-morph-shape {
-  fill: #e4e6ea;
+  fill: #F5F5F5;
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-menu {
-  background: #e4e6ea;
+  background: #F5F5F5;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   /* Wrapper for item list */
@@ -10489,25 +10498,53 @@ a.text-dark:focus {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 30px 15px;
+  background-color: #F5F5F5;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio {
+  margin-bottom: 40px;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol {
-  margin-bottom: 40px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol img {
   max-height: 300px;
 }
 
-#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol h4 {
-  padding-left: 15px;
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol {
+  padding: 10px;
 }
 
-#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol img {
-  height: 30px;
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol img:hover {
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link {
+  padding: 0 15px 20px 0;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link img {
+  height: 25px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link img:hover {
   opacity: 0.4;
 }
 
@@ -10594,7 +10631,6 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail {
   margin: 40px 0;
-  padding: 0 15px;
 }
 
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail .viewBtn {
