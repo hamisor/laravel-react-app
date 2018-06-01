@@ -97778,7 +97778,7 @@ var UserProjectDetail = function (_React$Component) {
                 this.props.demoUrl ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "a",
                     { href: this.props.demoUrl,
-                        className: "btn btn-primary",
+                        className: "viewBtn btn",
                         role: "button",
                         target: "_blank" },
                     "View"

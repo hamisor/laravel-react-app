@@ -10511,6 +10511,10 @@ a.text-dark:focus {
   opacity: 0.4;
 }
 
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a {
+  border-radius: 0;
+}
+
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail {
   margin: 40px 0;
 }
@@ -10586,5 +10590,19 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail ul li {
   margin-bottom: 15px;
+}
+
+#reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail {
+  margin: 40px 0;
+  padding: 0 15px;
+}
+
+#reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail .viewBtn {
+  border-radius: 0;
+  background-color: aqua;
+}
+
+#reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail p {
+  margin-top: 15px;
 }
 

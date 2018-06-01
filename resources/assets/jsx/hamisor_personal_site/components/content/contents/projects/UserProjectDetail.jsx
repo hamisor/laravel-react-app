@@ -15,7 +15,7 @@ class UserProjectDetail extends React.Component
                     </ul>
                     {
                         this.props.demoUrl ? <a href={this.props.demoUrl}
-                                                   className="btn btn-primary"
+                                                   className="viewBtn btn"
                                                    role="button"
                                                    target="_blank">View</a>
                                             : null

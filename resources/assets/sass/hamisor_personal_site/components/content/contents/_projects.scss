@@ -4,7 +4,17 @@
   {
     .userProjectDetail
     {
-      
+      margin: 40px 0;
+      padding: 0 15px;
+      .viewBtn
+      {
+		@include borderRadius(0);
+		background-color: aqua;
+      }
+      p
+      {
+        margin-top: 15px;
+      }
     }
   }
 }
