@@ -17,7 +17,7 @@ class Home extends React.Component
 						I am a polyglot full-stack software developer.
 					</p>
 					<p className="lead">
-						I am passionate about building software that are scalable, reliable and resilient.
+						I am passionate about building software that is scalable, reliable and resilient.
 					</p>
 				</div>
 			</div>

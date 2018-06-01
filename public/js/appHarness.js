@@ -90420,7 +90420,7 @@ var Home = function (_React$Component) {
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						"p",
 						{ className: "lead" },
-						"I am passionate about building software that are scalable, reliable and resilient."
+						"I am passionate about building software that is scalable, reliable and resilient."
 					)
 				)
 			);
@@ -96367,10 +96367,10 @@ var SkillsDetail = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "skillsDetail" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Computer Software", skillDetails: this.props.computerSoftware }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Programming Language", skillDetails: this.props.programmingLanguage }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Database", skillDetails: this.props.database }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Programming Frameworks / Libraries", skillDetails: this.props.programmingFrameworks }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Software", skillDetails: this.props.computerSoftware }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Languages", skillDetails: this.props.programmingLanguage }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Databases", skillDetails: this.props.database }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Frameworks / Libraries", skillDetails: this.props.programmingFrameworks }),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Build Tools", skillDetails: this.props.buildTools }),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Server", skillDetails: this.props.server }),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SkillDetail__["a" /* default */], { skillName: "Operating System", skillDetails: this.props.operatingSystem })
