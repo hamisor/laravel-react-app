@@ -52,7 +52,7 @@ class UserProjectsDetail extends React.Component
 
         return(
             <div className="userProjects">
-                <HamisorSiteLoader isLoading={isLoading}/>
+                {isLoading ? <HamisorSiteLoader/> : null}
                 {info}
             </div>
         );

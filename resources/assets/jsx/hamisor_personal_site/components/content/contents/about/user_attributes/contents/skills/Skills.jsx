@@ -51,7 +51,7 @@ class Skills extends React.Component
 		}
 
         return  <div className="skills">
-                    <HamisorSiteLoader isLoading={isLoading}/>
+                    {isLoading ? <HamisorSiteLoader/> : null}
                     {info}
                 </div>;
     }

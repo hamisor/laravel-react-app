@@ -7293,8 +7293,6 @@ var HamisorSiteApiHelper = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners__ = __webpack_require__(308);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_spinners___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_spinners__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7306,8 +7304,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
-var LOADER_COLOUR = "#18FFFF";
+var LOADER_COLOUR = "#adadad";
 
 var HamisorSiteLoader = function (_React$Component) {
 	_inherits(HamisorSiteLoader, _React$Component);
@@ -7324,20 +7321,13 @@ var HamisorSiteLoader = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "hamisorSiteLoader" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_spinners__["RingLoader"], {
-					color: LOADER_COLOUR,
-					loading: this.props.isLoading
-				})
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_spinners__["PropagateLoader"], { color: LOADER_COLOUR })
 			);
 		}
 	}]);
 
 	return HamisorSiteLoader;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-HamisorSiteLoader.propTypes = {
-	isLoading: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.bool.isRequired
-};
 
 /* harmony default export */ __webpack_exports__["a"] = (HamisorSiteLoader);
 
@@ -90751,7 +90741,7 @@ var Education = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "education" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+				isLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__["a" /* default */], null) : null,
 				info
 			);
 		}
@@ -96137,7 +96127,7 @@ var Skills = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "skills" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+				isLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], null) : null,
 				info
 			);
 		}
@@ -96489,7 +96479,7 @@ var WorkExperience = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "workExperience" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+				isLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], null) : null,
 				info
 			);
 		}
@@ -97116,7 +97106,7 @@ var UserBio = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
 				{ className: "userBio col-sm-3" },
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+				isLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__common_components_HamisorSiteLoader__["a" /* default */], null) : null,
 				info
 			);
 		}
@@ -97554,7 +97544,7 @@ var UserProjectsDetail = function (_React$Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "userProjects" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__["a" /* default */], { isLoading: isLoading }),
+                isLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__common_components_HamisorSiteLoader__["a" /* default */], null) : null,
                 info
             );
         }

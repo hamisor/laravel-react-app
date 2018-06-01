@@ -7,7 +7,7 @@
   padding: 30px 15px;
   background-color: $hamisorSiteContentBgColor;
 
-
+  @import "../common/hamisorSiteLoader";
   @import "contents/about";
   @import "contents/projects";
 }

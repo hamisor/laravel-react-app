@@ -10530,8 +10530,25 @@ a.text-dark:focus {
   background-color: #edf0f3;
 }
 
+#reactApp #appContainer #pageContainer .content .hamisorSiteLoader {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #reactApp #appContainer #pageContainer .content .about .userBio {
   margin-bottom: 40px;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userBio .hamisorSiteLoader {
+  height: 50px;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userProfileImgCol {

@@ -1,6 +1,12 @@
 .userBio
 {
   margin-bottom: 40px;
+  // Hamisor site loader height override
+  .hamisorSiteLoader
+  {
+    height: 50px;
+  }
+
   .userBioDetail
   {
     @extend %cellBgCommonStyle;

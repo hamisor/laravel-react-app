@@ -51,7 +51,7 @@ class UserBio extends React.Component
 
         return(
             <div className="userBio col-sm-3">
-				<HamisorSiteLoader isLoading={isLoading}/>
+				{isLoading ? <HamisorSiteLoader/> : null}
 				{info}
 			</div>
         );
