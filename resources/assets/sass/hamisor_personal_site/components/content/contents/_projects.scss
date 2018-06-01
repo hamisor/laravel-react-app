@@ -4,13 +4,14 @@
   {
     .userProjectDetail
     {
-      margin: 40px 0;
+      margin-bottom: 40px;
       @extend %cellBgCommonStyle;
 
       .viewBtn
       {
 		@include borderRadius(0);
-		background-color: aqua;
+		background-color: $hamisorSiteProjectsViewBtnBgColor;
+        color: $hamisorSiteProjectsViewBtnFontColor;
       }
       p
       {

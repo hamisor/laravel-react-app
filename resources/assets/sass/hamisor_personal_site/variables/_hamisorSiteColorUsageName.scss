@@ -2,10 +2,19 @@
 
 $hamisorSiteBorderColor:				$hamisorSiteBlack;
 $hamisorSiteContentBgColor:				$hamisorSiteGrey;
-$hamisorSiteCellBgColor:				$hamisorSiteWhite;
+$hamisorSiteCellBgColor:				$hamisorSiteLightGrey;
 // Burger menu
-$hamisorSiteBurgerMenuCloseBtnColor:	$hamisorSiteBlack;
-$hamisorSiteBurgerMenuListFontColor:	$hamisorSiteBlack;
-$hamisorSiteBurgerMenuBackgroundColor:	$hamisorSiteGrey;
+$hamisorSiteBurgerMenuCloseBtnColor:	$hamisorSiteLightestGrey;
+$hamisorSiteBurgerMenuBarColor:			$hamisorSiteLightestGrey;
+$hamisorSiteBurgerMenuListFontColor:	$hamisorSiteLightestGrey;
+$hamisorSiteBurgerMenuBgColor:			$hamisorSiteNavy;
+// Header menu
+$hamisorSiteHeaderMenuBgColor:			$hamisorSiteNavy;
+$hamisorSiteHeaderMenuFontColor: 		$hamisorSiteLightestGrey;
+$hamisorSiteHeaderMenuHoverColor:		$hamisorSiteMediumNavy;
+$hamisorSiteHeaderMenuActiveColor:		$hamisorSiteLightNavy;
 // About me nav tabs
 $hamisorSiteAboutMeNavTabColor:			$hamisorSiteGrey;
+// Projects
+$hamisorSiteProjectsViewBtnFontColor:	$hamisorSiteWhite;
+$hamisorSiteProjectsViewBtnBgColor:		$hamisorSiteBlue;

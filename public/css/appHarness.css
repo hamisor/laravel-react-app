@@ -10407,8 +10407,38 @@ a.text-dark:focus {
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail,
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail,
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail {
-  background-color: #FFFFFF;
+  background-color: #f6f8fa;
   padding: 20px;
+}
+
+#reactApp #appContainer .navbar-nav {
+  height: inherit;
+}
+
+#reactApp #appContainer .navbar-nav .nav-item {
+  width: 120px;
+}
+
+#reactApp #appContainer .navbar-nav .nav-item .nav-link {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #adadad;
+}
+
+#reactApp #appContainer .navbar-nav .nav-item:hover {
+  background-color: #2f4652;
+}
+
+#reactApp #appContainer .navbar-nav .nav-item.active {
+  background-color: #364e5a;
 }
 
 #reactApp #appContainer .bm-overlay {
@@ -10428,35 +10458,24 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-morph-shape {
-  fill: #F5F5F5;
+  fill: #283e49;
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-menu {
-  background: #F5F5F5;
+  background: #283e49;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   /* Wrapper for item list */
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-menu .bm-item-list {
-  color: #252a32;
+  color: #adadad;
   padding: 0.8em;
 }
 
-#reactApp #appContainer .bm-menu-wrap .bm-menu .bm-item-list li {
-  list-style: none;
-  padding: 0;
-}
-
-#reactApp #appContainer .bm-menu-wrap .bm-menu .bm-item-list li a {
-  font-size: 12px;
-  color: #252a32;
-}
-
-#reactApp #appContainer .bm-menu-wrap .bm-menu .bm-item-list li.active a {
-  font-size: 12px;
-  color: #252a32;
-  font-weight: bold;
+#reactApp #appContainer .bm-menu-wrap .bm-menu .bm-item-list .navbar-nav .nav-item {
+  width: 200px;
+  margin-bottom: 15px;
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-cross-button {
@@ -10466,7 +10485,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer .bm-menu-wrap .bm-cross-button .bm-cross {
-  background: #252a32;
+  background: #adadad;
 }
 
 #reactApp #appContainer .bm-burger-button {
@@ -10479,7 +10498,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer .bm-burger-button .bm-burger-bars {
-  background: black;
+  background: #adadad;
   height: 15% !important;
 }
 
@@ -10490,6 +10509,16 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer .navbar {
   height: 80px;
+  background-color: #283e49;
+  padding: 0 15px;
+}
+
+#reactApp #appContainer #pageContainer .navbar .navbar-brand {
+  color: #adadad;
+}
+
+#reactApp #appContainer #pageContainer .navbar .navbar-collapse {
+  height: 100%;
 }
 
 #reactApp #appContainer #pageContainer .content {
@@ -10498,7 +10527,7 @@ a.text-dark:focus {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 30px 15px;
-  background-color: #F5F5F5;
+  background-color: #edf0f3;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio {
@@ -10557,8 +10586,8 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a.active {
-  background-color: #F5F5F5;
-  border-bottom-color: #F5F5F5;
+  background-color: #edf0f3;
+  border-bottom-color: #edf0f3;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a.active:hover {
@@ -10643,12 +10672,13 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail {
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail .viewBtn {
   border-radius: 0;
-  background-color: aqua;
+  background-color: #0173b1;
+  color: #dde9f2;
 }
 
 #reactApp #appContainer #pageContainer .content .projects .userProjects .userProjectDetail p {
