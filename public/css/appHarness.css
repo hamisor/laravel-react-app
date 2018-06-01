@@ -10388,8 +10388,14 @@ a.text-dark:focus {
   }
 }
 
+@font-face {
+  font-family: hamisorSiteFont;
+  src: url(/fonts/NotoSans-Regular.ttf?61c3431e4e0ac62b136bc26b427ee05f);
+}
+
 #reactApp #appContainer {
   height: 100vh;
+  font-family: hamisorSiteFont, sans-serif;
   /* Styling of overlay */
   /* Position and sizing of burger button */
 }
@@ -10402,6 +10408,7 @@ a.text-dark:focus {
   color: black;
 }
 
+#reactApp #appContainer #pageContainer .content .jumbotron,
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail,
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail,
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail,
@@ -10541,6 +10548,10 @@ a.text-dark:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#reactApp #appContainer #pageContainer .content .jumbotron {
+  border-radius: 0;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio {

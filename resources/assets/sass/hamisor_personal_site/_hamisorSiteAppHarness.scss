@@ -1,6 +1,7 @@
 // Hamisor site variables
-@import "variables/hamisorSiteColorUsageName";
-@import "variables/hamisorSiteFontSize";
+@import "variables/colors/hamisorSiteColorUsageName";
+@import "variables/fonts/hamisorSiteFontSize";
+@import "variables/fonts/hamisorSiteFontFamily";
 // Hamisor site mixins
 @import "mixins/mixins";
 
@@ -10,6 +11,7 @@
   #appContainer
   {
     height: 100vh;
+    font-family: hamisorSiteFont, sans-serif;
 
     // Global common style
     a
