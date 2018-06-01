@@ -5,6 +5,19 @@
 	  a
 	  {
 		@include borderRadius(0);
+		&:hover
+		{
+		  opacity: 0.5;
+		}
+		&.active
+		{
+		  background-color: $hamisorSiteAboutMeNavTabColor;
+		  border-bottom-color: $hamisorSiteAboutMeNavTabColor;
+		  &:hover
+		  {
+			opacity: 1;
+		  }
+		}
 	  }
 	}
 }

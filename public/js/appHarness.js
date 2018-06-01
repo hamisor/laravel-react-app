@@ -22432,28 +22432,6 @@ var MenuList = function (_React$Component) {
                             onClick: this.props.onNavigationItemClick },
                         "Projects"
                     )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    { className: "nav-item " + (this.props.currentMenuOption === __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG ? "active" : "") },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
-                        { className: "nav-link",
-                            to: __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].BLOG],
-                            onClick: this.props.onNavigationItemClick },
-                        "Blog"
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "li",
-                    { className: "nav-item " + (this.props.currentMenuOption === __WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].CONTACT_ME ? "active" : "") },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Link */],
-                        { className: "nav-link",
-                            to: __WEBPACK_IMPORTED_MODULE_4__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_3__enums_RouteEnums__["a" /* default */].CONTACT_ME],
-                            onClick: this.props.onNavigationItemClick },
-                        "Contact"
-                    )
                 )
             );
         }
@@ -90588,7 +90566,7 @@ var UserAttributesNav = function (_React$Component) {
                         { className: "nav-link " + (this.state.currentAttributeOption === __WEBPACK_IMPORTED_MODULE_2__enums_RouteEnums__["a" /* default */].ABOUT_ME_WORK_EXPERIENCE ? "active" : ""),
                             to: __WEBPACK_IMPORTED_MODULE_3__maps_RouteMap__["a" /* default */][__WEBPACK_IMPORTED_MODULE_2__enums_RouteEnums__["a" /* default */].ABOUT_ME_WORK_EXPERIENCE],
                             onClick: this._onUserAttributeClick },
-                        "Work Experience"
+                        "Work"
                     )
                 )
             );

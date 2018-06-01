@@ -10537,7 +10537,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link {
-  padding: 0 15px 20px 0;
+  padding: 0 14px 20px 0;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link img {
@@ -10550,6 +10550,19 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a {
   border-radius: 0;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a:hover {
+  opacity: 0.5;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a.active {
+  background-color: #F5F5F5;
+  border-bottom-color: #F5F5F5;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a.active:hover {
+  opacity: 1;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .education .educationDetail {

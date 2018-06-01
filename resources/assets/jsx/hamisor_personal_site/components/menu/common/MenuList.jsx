@@ -25,17 +25,17 @@ class MenuList extends React.Component
                               to={RouteMap[RouteEnums.PROJECTS]}
                               onClick={this.props.onNavigationItemClick}>Projects</Link>
                     </li>
-                    <li className={`nav-item ${this.props.currentMenuOption === RouteEnums.BLOG ? "active": ""}`}>
-                        <Link className="nav-link"
-                              to={RouteMap[RouteEnums.BLOG]}
-                              onClick={this.props.onNavigationItemClick}>Blog</Link>
-                    </li>
-                    <li className={`nav-item ${this.props.currentMenuOption === RouteEnums.CONTACT_ME ? "active": ""}`}>
-                            <Link className="nav-link"
-                                  to={RouteMap[RouteEnums.CONTACT_ME]}
-                                  onClick={this.props.onNavigationItemClick}>Contact</Link>
-                        </li>
-                    </ul>
+                    {/*<li className={`nav-item ${this.props.currentMenuOption === RouteEnums.BLOG ? "active": ""}`}>*/}
+                        {/*<Link className="nav-link"*/}
+                              {/*to={RouteMap[RouteEnums.BLOG]}*/}
+                              {/*onClick={this.props.onNavigationItemClick}>Blog</Link>*/}
+                    {/*</li>*/}
+                    {/*<li className={`nav-item ${this.props.currentMenuOption === RouteEnums.CONTACT_ME ? "active": ""}`}>*/}
+                            {/*<Link className="nav-link"*/}
+                                  {/*to={RouteMap[RouteEnums.CONTACT_ME]}*/}
+                                  {/*onClick={this.props.onNavigationItemClick}>Contact</Link>*/}
+                    {/*</li>*/}
+                </ul>
     }
 }
 
