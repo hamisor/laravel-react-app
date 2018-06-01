@@ -35,9 +35,12 @@
           img
           {
             height: 25px;
-            &:hover
+            @include media-breakpoint-up(lg)
             {
-              opacity: 0.4;
+              &:hover
+              {
+                opacity: 0.4;
+              }
             }
           }
         }

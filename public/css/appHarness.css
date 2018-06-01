@@ -10601,8 +10601,10 @@ a.text-dark:focus {
   height: 25px;
 }
 
-#reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link img:hover {
-  opacity: 0.4;
+@media (min-width: 992px) {
+  #reactApp #appContainer #pageContainer .content .about .userBio .userBioDetail .userBioInfoCol .userBioLinks .nav-link img:hover {
+    opacity: 0.4;
+  }
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesNav .nav-item a {
