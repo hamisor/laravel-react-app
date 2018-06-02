@@ -65,7 +65,7 @@ class UserEducationStore extends Store
 			this._setUserEducation(data);
 		}
 
-		UserAttributeActionCreator.getUserEducation();
+		UserAttributeActionCreator.onGetUserEducation();
 	}
 }
 

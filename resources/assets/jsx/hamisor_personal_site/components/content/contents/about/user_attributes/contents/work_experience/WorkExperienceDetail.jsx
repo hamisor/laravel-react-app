@@ -13,9 +13,10 @@ class WorkExperienceDetail extends React.Component
 							<img className="mx-auto d-block img-fluid" src={this.props.logoUrl}/>
 						</div>
 						<div className="companyNameCol col-12 col-md-9">
-							<h4>{this.props.companyName}</h4>
+							<h3>{this.props.companyName}</h3>
 						</div>
 					</div>
+		            <h4>{this.props.job_title}</h4>
 					<div className="row">
 						<div className="col-3">
 							<h5><i>{this.props.location}</i></h5>

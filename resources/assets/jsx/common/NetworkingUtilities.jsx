@@ -85,13 +85,13 @@ class NetworkingUtilities
 			{
 				// The request was made and the server responded with a status code
 				// that falls out of the range of 2xx
-				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.FAILED_RESPONSE]}, Blame Url [ ${url} ]]`);
+				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.FAILED_RESPONSE]} ], Blame Url [ ${url} ]`);
 				callback(NetworkingFailedRequestCodeEnums.FAILED_RESPONSE, null);
 			}
 			else if (error.request)
 			{
 				// The request was made but no response was received
-				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER]}, Blame Url [ ${url} ]]`);
+				console.error(`Network request failed! Routine [ ${ApiRoutineNameMap[routineName]} ], Reason [ ${NetworkingFailedRequestCodeToReasonMap[NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER]} ], Blame Url [ ${url} ]`);
 				console.error("Request is [ %o ]", error.request);
 				callback(NetworkingFailedRequestCodeEnums.NO_RESPONSE_FROM_SERVER, null);
 			}
