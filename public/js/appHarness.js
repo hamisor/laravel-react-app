@@ -96735,11 +96735,16 @@ var WorkExperienceDetail = function (_React$Component) {
 						"div",
 						{ className: "companyNameCol col-12 col-md-9" },
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-							"h4",
+							"h3",
 							null,
 							this.props.companyName
 						)
 					)
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"h4",
+					null,
+					this.props.job_title
 				),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",

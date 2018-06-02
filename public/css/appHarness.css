@@ -10655,7 +10655,7 @@ a.text-dark:focus {
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .skills .skillsDetail .skillDetail img {
-  height: 80px;
+  max-height: 90px;
   margin: 20px 40px 20px 0;
 }
 
@@ -10687,6 +10687,10 @@ a.text-dark:focus {
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail .row .dateCol h5 {
   text-align: center;
+}
+
+#reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail h4 {
+  margin: 5px 0 20px 0;
 }
 
 #reactApp #appContainer #pageContainer .content .about .userAttributes .userAttributesContent .workExperience .workExperienceDetail h5 {
