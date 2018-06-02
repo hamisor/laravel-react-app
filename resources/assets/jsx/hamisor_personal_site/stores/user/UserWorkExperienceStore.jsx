@@ -65,7 +65,7 @@ class UserWorkExperienceStore extends Store
 			this._setUserWorkExperience(data);
 		}
 
-		UserAttributeActionCreator.getUserWorkExperience();
+		UserAttributeActionCreator.onGetUserWorkExperience();
 	}
 }
 

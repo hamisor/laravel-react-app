@@ -44,7 +44,7 @@ class UserProjectsDetail extends React.Component
                 break;
             case ApiCallDataStatusEnums.FAIL:
                 isLoading 	= false;
-                info		= <HamisorSiteApiError routineName={ApiRoutineNameMap[ApiRoutineEnums.GET_USER_BIO]}/>;
+                info		= <HamisorSiteApiError routineName={ApiRoutineNameMap[ApiRoutineEnums.GET_USER_PROJECTS]}/>;
                 break;
             default:
                 break;
